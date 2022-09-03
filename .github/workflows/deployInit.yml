@@ -43,10 +43,6 @@ jobs:
             secret/data/acl/continuous_integration/database/${{ env.INPUT_ENV }} DATABASE_PASSWORD;
             secret/data/acl/continuous_integration TURBINE_TOKEN;
 
-      - name: Install postgresql client
-        run: |
-          apt-get install --yes postgresql-client
-
       - name: Backup database
         env:
           PGPASSWORD: ${{ env.DATABASE_PASSWORD }}
