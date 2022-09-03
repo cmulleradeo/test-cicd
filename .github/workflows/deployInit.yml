@@ -36,5 +36,3 @@ jobs:
             secret/data/acl/continuous_integration JFROG_WRITER_SA_USERNAME;
             secret/data/acl/continuous_integration NPM_AUTH;
             secret/data/acl/continuous_integration NPM_REGISTRY;
-
-      - name: Deploy inits
