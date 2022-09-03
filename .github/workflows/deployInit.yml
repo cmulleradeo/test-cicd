@@ -45,7 +45,6 @@ jobs:
 
       - name: Install postgresql client
         run: |
-          apt-get update
           apt-get install --yes postgresql-client
 
       - name: Backup database
