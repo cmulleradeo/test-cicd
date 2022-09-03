@@ -12,10 +12,12 @@ env:
   NODE_VERSION: 14
   VAULT_ADDR: https://vault.factory.adeo.cloud
   VAULT_NAMESPACE: /adeo/metric
+  DATABASE_NAME: metric-v2
+  DATABASE_BACKUP_NAME: metric-backup
 
 jobs:
-  deploy_with_init:
-    name: Deploy the ACL after running the init modules
+  init-database:
+    name: Prepare the database
     runs-on: ubuntu-20.04
     steps:
       - name: Parse environment
@@ -36,3 +38,40 @@ jobs:
           secretId: ${{ secrets.VAULT_SECRET_ID }}
           secrets: |
             secret/data/acl/continuous_integration/$ENV DATABASE_HOST;
+            secret/data/acl/continuous_integration/$ENV DATABASE_PORT;
+            secret/data/acl/continuous_integration/$ENV DATABASE_USER;
+            secret/data/acl/continuous_integration/$ENV DATABASE_PASSWORD;
+            secret/data/acl/continuous_integration TURBINE_TOKEN;
+
+      - name: Install postgresql client
+        run: |
+          apt-get update
+          apt-get install --yes postgresql-client
+
+      - name: Backup database
+        env:
+          PGPASSWORD: ${{ env.DATABASE_PASSWORD }}
+        run: |
+          psql -h $DATABASE_HOST -p $DATABASE_PORT -U $DATABASE_USER -d $DATABASE_NAME -c "SELECT pg_terminate_backend(pg_stat_activity.pid) FROM pg_stat_activity WHERE pg_stat_activity.datname = '$DATABASE_NAME' AND pid <> pg_backend_pid();"
+          psql -h $DATABASE_HOST -p $DATABASE_PORT -U $DATABASE_USER -d $DATABASE_NAME -c "CREATE DATABASE $DATABASE_BACKUP_NAME WITH TEMPLATE $DATABASE_NAME;"
+          psql -h $DATABASE_HOST -p $DATABASE_PORT -U $DATABASE_USER -d $DATABASE_NAME -c "DROP DATABASE $DATABASE_NAME;"
+          psql -h $DATABASE_HOST -p $DATABASE_PORT -U $DATABASE_USER -d $DATABASE_NAME -c "CREATE DATABASE $DATABASE_NAME;"
+  
+  deploy-inits:
+    name: Deploy the init modules
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        package: [
+          product-development/init,
+          project-product-development/init,
+          brief-product-development/init,
+          milestone/init,
+        ]
+    steps:
+      - name: Deploy init modules
+        uses: adeo/turbine-deploy-action@main
+        with:
+          token: ${{ env.TURBINE_TOKEN }}
+          component: ${{ matrix.package }}
+          environment: dev
