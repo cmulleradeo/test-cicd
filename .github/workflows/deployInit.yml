@@ -23,7 +23,7 @@ jobs:
           IFS='-'
           read -a strarr <<< ${{ inputs.env }}
           env="${strarr[0]}"
-          echo "ENV=$env" >> $GITHUB_ENV
+          echo "INPUT_ENV=$env" >> $GITHUB_ENV
 
       - name: Import secrets from Vault Openshift
         uses: hashicorp/vault-action@v2.3.1
