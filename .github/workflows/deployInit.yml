@@ -8,6 +8,11 @@ on:
         type: environment
         required: true
 
+env:
+  NODE_VERSION: 14
+  VAULT_ADDR: https://vault.factory.adeo.cloud
+  VAULT_NAMESPACE: /adeo/metric
+
 jobs:
   deploy_with_init:
     name: Deploy the ACL after running the init modules
@@ -18,11 +23,10 @@ jobs:
           IFS='-'
           read -a strarr <<< ${{ inputs.env }}
           echo "${strarr[0]}"
+          echo "ENV=${strarr[0]}" >> $GITHUB_ENV
 
       - name: Import secrets from Vault Openshift
         uses: hashicorp/vault-action@v2.3.1
-        env:
-          environment: ${{ inputs.env }}
         with:
           url: ${{ env.VAULT_ADDR }}
           namespace: ${{ env.VAULT_NAMESPACE }}
@@ -30,9 +34,4 @@ jobs:
           roleId: ${{ secrets.VAULT_ROLE_ID }}
           secretId: ${{ secrets.VAULT_SECRET_ID }}
           secrets: |
-            secret/data/acl/continuous_integration JFROG_DOCKER_REGISTRY_HP;
-            secret/data/acl/continuous_integration JFROG_DOCKER_REGISTRY_PROD;
-            secret/data/acl/continuous_integration JFROG_WRITER_SA_PASSWORD;
-            secret/data/acl/continuous_integration JFROG_WRITER_SA_USERNAME;
-            secret/data/acl/continuous_integration NPM_AUTH;
-            secret/data/acl/continuous_integration NPM_REGISTRY;
+            secret/data/acl/continuous_integration/$ENV DATABASE_HOST;
