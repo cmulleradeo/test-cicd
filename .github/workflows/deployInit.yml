@@ -20,6 +20,7 @@ jobs:
     steps:
       - name: Parse environment
         run: |
+          echo "CURRENT_VERSION=1.0" >> $GITHUB_ENV
           IFS='-'
           read -a strarr <<< ${{ inputs.env }}
           env="${strarr[0]}"
