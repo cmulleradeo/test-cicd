@@ -60,6 +60,7 @@ jobs:
   deploy-inits:
     name: Deploy the init modules
     runs-on: ubuntu-20.04
+    needs: [init-database]
     strategy:
       matrix:
         package: [
