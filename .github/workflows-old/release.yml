@@ -173,14 +173,14 @@ jobs:
             cp .docker/Instance.entrypoint.sh ${{ env.PACKAGE_PATH }}/entrypoint.sh
           fi
 
-      - name: Build prerelease Docker images
-        if: contains(github.ref, 'develop')
-        env:
-          PACKAGE_PATH: packages/${{ matrix.package }}
-        run: sh .github/docker-build.sh ${{ env.JFROG_DOCKER_REGISTRY_HP }}
+      # - name: Build prerelease Docker images
+      #   if: contains(github.ref, 'develop')
+      #   env:
+      #     PACKAGE_PATH: packages/${{ matrix.package }}
+      #   run: sh .github/docker-build.sh ${{ env.JFROG_DOCKER_REGISTRY_HP }}
 
-      - name: Build release Docker images
-        if: contains(github.ref, 'main')
-        env:
-          PACKAGE_PATH: packages/${{ matrix.package }}
-        run: sh .github/docker-build.sh ${{ env.JFROG_DOCKER_REGISTRY_PROD }}
+      # - name: Build release Docker images
+      #   if: contains(github.ref, 'main')
+      #   env:
+      #     PACKAGE_PATH: packages/${{ matrix.package }}
+      #   run: sh .github/docker-build.sh ${{ env.JFROG_DOCKER_REGISTRY_PROD }}

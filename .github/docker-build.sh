@@ -14,5 +14,5 @@ PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $
 
 # Build, tag and push the docker image.
 docker build -t "metric/$PACKAGE_NAME" .
-docker tag "metric/$PACKAGE_NAME" $REGISTRY/$PACKAGE_NAME:$PACKAGE_VERSION
-docker push $REGISTRY/$PACKAGE_NAME:$PACKAGE_VERSION
+# docker tag "metric/$PACKAGE_NAME" $REGISTRY/$PACKAGE_NAME:$PACKAGE_VERSION
+# docker push $REGISTRY/$PACKAGE_NAME:$PACKAGE_VERSION
