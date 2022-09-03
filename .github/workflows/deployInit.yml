@@ -1,0 +1,40 @@
+name: Deploy the init modules
+
+on:
+  workflow_dispatch:
+    inputs:
+      env:
+        description: Environment to deploy to
+        type: environment
+        required: true
+
+jobs:
+  deploy_with_init:
+    name: Deploy the ACL after running the init modules
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Parse environment
+        run: |
+          IFS='-'
+          read -a strarr <<< ${{ inputs.env }}
+          echo "${strarr[0]}"
+
+      - name: Import secrets from Vault Openshift
+        uses: hashicorp/vault-action@v2.3.1
+        env:
+          environment: ${{ inputs.env }}
+        with:
+          url: ${{ env.VAULT_ADDR }}
+          namespace: ${{ env.VAULT_NAMESPACE }}
+          method: approle
+          roleId: ${{ secrets.VAULT_ROLE_ID }}
+          secretId: ${{ secrets.VAULT_SECRET_ID }}
+          secrets: |
+            secret/data/acl/continuous_integration JFROG_DOCKER_REGISTRY_HP;
+            secret/data/acl/continuous_integration JFROG_DOCKER_REGISTRY_PROD;
+            secret/data/acl/continuous_integration JFROG_WRITER_SA_PASSWORD;
+            secret/data/acl/continuous_integration JFROG_WRITER_SA_USERNAME;
+            secret/data/acl/continuous_integration NPM_AUTH;
+            secret/data/acl/continuous_integration NPM_REGISTRY;
+
+      - name: Deploy inits

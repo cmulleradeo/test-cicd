@@ -186,7 +186,7 @@ jobs:
     name: Deploy the ACL in development environment after running the init modules
     runs-on: ubuntu-20.04
     needs: [docker-publish]
-    environment: 'dev'
+    environment: 'dev-with-init'
     steps:
       - name: Backup database
         run: echo "Backup database"
