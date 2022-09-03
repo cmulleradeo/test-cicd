@@ -63,10 +63,10 @@ jobs:
     strategy:
       matrix:
         package: [
-          product-development/init,
-          project-product-development/init,
-          brief-product-development/init,
-          milestone/init,
+          init-product-development,
+          init-project-product-development,
+          init-brief-product-development,
+          init-milestone,
         ]
     steps:
       - name: Deploy init modules
