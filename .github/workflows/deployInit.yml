@@ -20,10 +20,9 @@ jobs:
     steps:
       - name: Parse environment
         run: |
-          IFS='-'
-          read -a strarr <<< ${{ inputs.env }}
-          env="${strarr[0]}"
-          echo "CURRENT_VERSION=1.0" >> $GITHUB_ENV
+          IN="bla@some.com;john@home.com"
+          env=(${${{ inputs.env }}//;/ })
+          echo "INPUT_ENV=${env[0]}" >> $GITHUB_ENV
 
       - name: Import secrets from Vault Openshift
         uses: hashicorp/vault-action@v2.3.1
