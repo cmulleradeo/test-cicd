@@ -1,6 +1,6 @@
 {
   "name": "@metric/product-dev-event-kafka",
-  "version": "2.3.5",
+  "version": "2.3.6",
   "description": "",
   "main": "dist/index.js",
   "private": true,
@@ -77,8 +77,8 @@
     "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
-    "@metric/acl-common-modules": "^2.3.5",
-    "@metric/acl-core": "^2.3.5",
+    "@metric/acl-common-modules": "^2.3.6",
+    "@metric/acl-core": "^2.3.6",
     "axios": "^0.27.2"
   }
 }
