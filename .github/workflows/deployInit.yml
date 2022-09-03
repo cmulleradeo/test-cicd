@@ -20,8 +20,7 @@ jobs:
     steps:
       - name: Parse environment
         run: |
-          IN="bla@some.com;john@home.com"
-          env=(${${{ inputs.env }}//;/ })
+          env=(${${{ inputs.env }}//-/ })
           echo "INPUT_ENV=${env[0]}" >> $GITHUB_ENV
 
       - name: Import secrets from Vault Openshift
