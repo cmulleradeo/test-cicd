@@ -1,9 +1,16 @@
-name: Deploy the ACL
+# name: Deploy the ACL
 
-on:
-  workflow_run:
-    workflows: [Release]
-    types:
-      - completed
+# on:
+#   workflow_run:
+#     workflows: [Release]
+#     types:
+#       - completed
 
-jobs:
+# jobs:
+#   deploy_with_init:
+#     name: Deploy the ACL after running the init modules
+#     runs-on: ubuntu-20.04
+#     steps:
+#       - name: Backup database
+
+#       - name: Deploy inits

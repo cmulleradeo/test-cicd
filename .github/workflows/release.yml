@@ -1,7 +1,9 @@
 name: Release
 
 on:
-  workflow_dispatch
+  push:
+    branches:
+      - main
 
 env:
   NODE_VERSION: 14
@@ -179,3 +181,33 @@ jobs:
         env:
           PACKAGE_PATH: packages/${{ matrix.package }}
         run: sh .github/docker-build.sh ${{ env.JFROG_DOCKER_REGISTRY_PROD }}
+
+  deploy-dev-with-init:
+    name: Deploy the ACL in development environment after running the init modules
+    runs-on: ubuntu-20.04
+    needs: [docker-publish]
+    environment: 'dev'
+    steps:
+      - name: Backup database
+        run: echo "Backup database"
+
+      - name: Deploy init modules
+        run: echo "Deploying init modules via Turbine"
+  
+  deploy-dev:
+    name: Deploy the ACL in development environment
+    runs-on: ubuntu-20.04
+    needs: [docker-publish]
+    environment: 'dev'
+    steps:
+      - name: Deploy update modules
+        run: echo "Deploying update modules via Turbine"
+  
+  deploy-preprod:
+    name: Deploy the ACL in preprod environment
+    runs-on: ubuntu-20.04
+    needs: [docker-publish]
+    environment: 'preprod'
+    steps:
+      - name: Deploy update modules
+        run: echo "Deploying update modules via Turbine"
