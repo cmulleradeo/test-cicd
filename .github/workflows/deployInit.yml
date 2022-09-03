@@ -37,10 +37,10 @@ jobs:
           roleId: ${{ secrets.VAULT_ROLE_ID }}
           secretId: ${{ secrets.VAULT_SECRET_ID }}
           secrets: |
-            secret/data/acl/continuous_integration/$ENV DATABASE_HOST;
-            secret/data/acl/continuous_integration/$ENV DATABASE_PORT;
-            secret/data/acl/continuous_integration/$ENV DATABASE_USER;
-            secret/data/acl/continuous_integration/$ENV DATABASE_PASSWORD;
+            secret/data/acl/continuous_integration/$INPUT_ENV DATABASE_HOST;
+            secret/data/acl/continuous_integration/$INPUT_ENV DATABASE_PORT;
+            secret/data/acl/continuous_integration/$INPUT_ENV DATABASE_USER;
+            secret/data/acl/continuous_integration/$INPUT_ENV DATABASE_PASSWORD;
             secret/data/acl/continuous_integration TURBINE_TOKEN;
 
       - name: Install postgresql client
