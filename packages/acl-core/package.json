@@ -1,6 +1,6 @@
 {
   "name": "@metric/acl-core",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "Core librairy for the Metric ACL",
   "main": "lib/index.js",
   "files": [

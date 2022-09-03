@@ -1,6 +1,6 @@
 {
   "name": "@metric/acl-api",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "API for the Metric ACL",
   "main": "dist/index.js",
   "private": true,
@@ -27,7 +27,7 @@
   "license": "ISC",
   "dependencies": {
     "@babel/runtime": "^7.16.0",
-    "@metric/acl-common-modules": "^2.3.2",
+    "@metric/acl-common-modules": "^2.3.3",
     "body-parser": "^1.19.0",
     "chalk": "^4.0.0",
     "core-js": "^3.6.5",

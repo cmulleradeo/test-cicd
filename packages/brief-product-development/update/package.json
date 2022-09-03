@@ -1,6 +1,6 @@
 {
   "name": "@metric/update-brief-product-development",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "",
   "main": "dist/index.js",
   "private": true,
@@ -21,7 +21,7 @@
     "reportFile": "jest_sonar_report.xml"
   },
   "dependencies": {
-    "@metric/acl-common-modules": "^2.3.2",
-    "@metric/acl-core": "^2.3.2"
+    "@metric/acl-common-modules": "^2.3.3",
+    "@metric/acl-core": "^2.3.3"
   }
 }
