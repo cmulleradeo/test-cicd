@@ -1,0 +1,14 @@
+﻿node_modules
+lerna-debug.log
+coverage
+.reports
+.env
+.env.local
+lib
+.npmrc
+dist
+packages/**/Dockerfile
+packages/**/entrypoint.sh
+api-docs.yaml
+docs/swagger.json
+.dev

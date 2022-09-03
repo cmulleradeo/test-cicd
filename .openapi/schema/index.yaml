@@ -1,0 +1,24 @@
+400:
+  $ref: "./errors/400.yaml"
+404:
+  $ref: "./errors/404.yaml"
+416:
+  $ref: "./errors/416.yaml"
+419:
+  $ref: "./errors/419.yaml"
+User:
+  $ref: "./generic/user.yaml"
+PaginationMetadata:
+  $ref: "./PaginationMetadata.yaml"
+ProjectProductDevelopment:
+  $ref: "./ProjectProductDevelopment.yaml"
+BriefProductDevelopment:
+  $ref: "./BriefProductDevelopment.yaml"
+BriefBuProductDevelopment:
+  $ref: "./BriefBuProductDevelopment.yaml"
+ProductByCodeAndBu:
+  $ref: "./ProductByCodeAndBu.yaml"
+ProductByMatrixId:
+  $ref: "./ProductByMatrixId.yaml"
+MilestoneByProjectCode:
+  $ref: "./MilestoneByProjectCode.yaml"

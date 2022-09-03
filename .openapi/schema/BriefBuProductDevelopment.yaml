@@ -1,0 +1,99 @@
+type: object
+description: As soon as a product development is not about improving a single product (or component on a group of product), a brief is required. A brief of product development is a key deliverable to set up the objectives, the feasability, the projected budget, the perimeter and the targetted Time to Market. A R.O.I. can be calculated and a Go/No Go pronounced by the Market Leader. In most of the project types, the accountable is the Cooperation Leader. When the 1st moment of truth is validated, the brief is frozen. Any modification should be considered as event of the project life. In some rare cases, the brief ca ben modified after the validation of the first moment of truth, if the market leader and the performance leader of the departement allow it.
+properties:
+  projectionImplantationDate:
+    description: Inhabitant Availability Date - Brief
+    type: string
+    format: date-time
+  briefBUInhabitantAvailabilityDate:
+    description: Taking back former range stock (€)
+    type: number
+  briefBURebateFormerRange:
+    description: Rebate on former range (€)
+    type: number
+  briefBUMerchImplementation:
+    description: BU Merchandising / implementation (€)
+    type: number
+  briefBUImplementationEstimatedCost:
+    description: BU implementaiton estimated cost (€)
+    type: number
+  briefBUImplementationFinancialHelp:
+    description: Implementation financial help (€)
+    type: number
+  briefBUTurnoverExistingParameter:
+    description: Brief's BU turnover existing perimeter
+    type: number
+  briefBUProjectSalesPerStore:
+    description: Project sales / Store (K€) - Brief (BU)
+    type: number
+  briefBUTurnoverProjectProjections:
+    description: Brief's BU turnover project projections
+    type: number
+  briefBUNumberOfMatrixID:
+    description: Nb of MatrixID - Brief (BU)
+    type: integer
+  briefBUNumberOfMatrixIDI2:
+    description: Nb of MatrixID i2 - Brief (BU)
+    type: integer
+  briefBUNumberOfMatrixIDI1:
+    description: Nb of MatrixID i1 - Brief (BU)
+    type: integer
+  briefBUMarketShareProjectFamilySalesRate:
+    description: Market Share Project / Family sales (%) - Brief (BU)
+    type: number
+  briefBUMarginRateEstimated3xNet:
+    description: 3xNet Margin Rate estimated (%)
+    type: number
+  briefBUPurchasingGainFirstPrice:
+    description: Purchasing gain - First price (%) - Brief
+    type: number
+  briefBUPurchasingGainFirstPriceRate:
+    description: Purchasing Gain (%) - Brief (BU)
+    type: number
+  briefBUPurchasingGain:
+    description: Purchasing Gain (K€) - Brief (BU)
+    type: number
+  briefBUPurchasingAmount:
+    description: Purchasing Amount (K€) - Brief (BU)
+    type: number
+  briefBU3xNetMarginNewProductsRate:
+    description: 3xNet Margin for new products - Brief (%)
+    type: number
+  briefBU3xNetMarginNewProductsValidatedRate:
+    description: 3xNet Margin for new products - Validated (%)
+    type: number
+  briefBUSellingTurnoverFullYeatCommitments:
+    description: Selling TO full year (K€) - Commitments (BU)
+    type: number
+  briefBUPurchasingGainValidatedRate:
+    description: Purchasing Gain (%) - Validated (BU)
+    type: number
+  briefBUPurchasingGainValidated:
+    description: Purchasing Gain (K€) - Validated (BU)
+    type: number
+  briefBUPurchasingAmountValidated:
+    description: Purchasing Amount (K€) - Validated (BU)
+    type: number
+  briefBUNumberOfMatrixIdCommitment:
+    description: Nb of MatrixID - Commitment (BU)
+    type: integer
+  briefBUNumberOfMatrixIdI2Commitment:
+    description: Nb of MatrixID i2 - Commitment (BU)
+    type: integer
+  briefBUNumberOfMatrixIdI1Commitment:
+    description: Nb of MatrixID i1 - Commitment (BU)
+    type: integer
+  BriefBUNumberOfShops:
+    description: Number of Shops - Brief
+    type: number
+  revisedImplementationDate:
+    description: Revised Inhabitant Availability Date
+    type: string
+    format: date-time
+  toCertifyEu:
+    description: To Certify (EU)
+    type: boolean
+  participates:
+    description: Participates ?
+    type: boolean
+  

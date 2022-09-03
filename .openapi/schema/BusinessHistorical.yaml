@@ -1,0 +1,51 @@
+type: object
+description: The historical conditions of existing products similar to the new ones to develop let the teams have an idea of the potential of the products. It bring together the performance of the previous 12 months and the supply chain conditions. Most of those data can be automatically downloaded from the GTIN of the similar existing product.
+properties:
+  buId:
+    description: BU ID
+    type: string
+    enum: [
+      01. LM France,                 
+      02. Weldom Integres,                         
+      03. Weldom Services,                 
+      04. LM Spain,                 
+      05. Aki Spain,                 
+      06. LM Italy,                 
+      07. Bricocenter,        
+      08. LM Russia,         
+      09. LM Poland,         
+      10. LM Brazil,         
+      11. LM Portugal,       
+      12. Aki Portugal,      
+      13. LM Greece / Cyprus,        
+      14. LM South Africa,         
+      15. LM Ukraine,        
+      16. LM Romania,         
+      17. Bricoman Fr,        
+      18. Bricoman Pol,         
+      19. Bricoman It,         
+      20. Bricomart,         
+      22. Zodio Brazil,                         
+      23. Zodio France,                 
+      24. Zodio Italy,                         
+      25. Alice Delice                
+    ]
+  secondarytype:
+    description: Secondary Type
+    type: string
+  currentNewProduction:
+    description: New product for BU
+    type: string
+    enum: [
+        "No",
+        "Yes"
+      ]
+  currentRefBU:
+    description: Ref Current BU
+    type: string
+  gtin:
+    description: GTIN Current for BU (Principal)
+    type: string
+  gtinSecondary:
+    description: GTIN Current for BU (Secondary)
+    type: string

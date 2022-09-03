@@ -1,0 +1,4 @@
+description: The number of allowed requests during the period
+schema:
+  type: integer
+  format: int32

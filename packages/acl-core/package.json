@@ -1,0 +1,51 @@
+{
+  "name": "@metric/acl-core",
+  "version": "2.3.0",
+  "description": "Core librairy for the Metric ACL",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "sample_config.json"
+  ],
+  "scripts": {
+    "test": "jest --coverage --detectOpenHandles",
+    "lint": "eslint ./src/**/*.js",
+    "start": "node ./lib/index.js",
+    "prepublishOnly": "npm run build",
+    "build": "npm run clean && npx babel src --out-dir lib  --config-file ../../babel.config.js",
+    "clean": "npx rimraf --no-glob ./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adeo/metric-acl-monorepo/packages/acl-core"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adeo/metric-acl-monorepo/issues"
+  },
+  "publishConfig": {
+    "registry": "https://adeo.jfrog.io/adeo/api/npm/npm/"
+  },
+  "homepage": "https://github.com/adeo/metric-acl-monorepo#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.16.0",
+    "@kafkajs/confluent-schema-registry": "^3.0.1",
+    "@sentry/node": "^6.13.3",
+    "amqplib": "^0.8.0",
+    "async": "^3.2.2",
+    "chalk": "^4.1.2",
+    "dayjs": "^1.10.7",
+    "dd-trace": "^1.5.0",
+    "dotenv": "^10.0.0",
+    "express": "4.17.1",
+    "hot-shots": "^9.0.0",
+    "kafkajs": "^1.15.0",
+    "lodash": "^4.17.21",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.9.0",
+    "winston": "^3.3.3",
+    "winston-transport": "^4.4.0"
+  }
+}

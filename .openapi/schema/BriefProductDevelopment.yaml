@@ -1,0 +1,428 @@
+type: object
+description: As soon as a product development is not about improving a single product (or component on a group of product), a brief is required. A brief of product development is a key deliverable to set up the objectives, the feasability, the projected budget, the perimeter and the targetted Time to Market. A R.O.I. can be calculated and a Go/No Go pronounced by the Market Leader. In most of the project types, the accountable is the Cooperation Leader. When the 1st moment of truth is validated, the brief is frozen. Any modification should be considered as event of the project life. In some rare cases, the brief ca ben modified after the validation of the first moment of truth, if the market leader and the performance leader of the departement allow it.
+properties:
+  turnoverForTender:
+    description: Brief's Turnover for Tender (€)
+    type: number
+  nbTenderRound:
+    description: Brief's number of tender round
+    type: string
+    enum: [1,2,3,4,5]
+  nbProductsForTender:
+    description: Brief's number of products for tender
+    type: integer
+  expectedIndusLevel:
+    description: Brief's expected industrial level
+    type: string
+    enum: [1,2,3]
+  expectedCbdLevel:
+    description: Brief's expected Cost Breakdown level
+    type: string
+    enum: [1,2,3]
+  models:
+    description: Brief's models
+    type: array
+    items:
+      type: object
+      properties:
+        id:
+          type: string
+        description:
+          type: string
+  supplyChainValueCreation:
+    description: Brief's supply chain value creation
+    type: string
+    enum: [1,2,3,4,5]
+  reconceptionValueCreation:
+    description: Brief's conception value creation
+    type: string
+    enum: [1,2,3,4,5]
+  qualityValueCreation:
+    description: Brief's quality value creation
+    type: string
+    enum: [1,2,3,4,5]
+  purchasingValueCreation:
+    description: Brief's purchasing value creation
+    type: string
+    enum: [1,2,3,4,5]
+  offerChainValueCreation:
+    description: Brief's offer value creation
+    type: string
+    enum: [1,2,3,4,5]
+  commercializationValueCreation:
+    description: Brief's commercialization value creation
+    type: string
+    enum: [1,2,3,4,5]
+  sustainableAndRecycle:
+    description: Brief's made from responsible production value creation
+    type: string
+    enum: [1,2,3,4,5]
+  sustainable:
+    description: Brief's bring sustainable features value creation
+    type: string
+    enum: [1,2,3,4,5]
+  madeToLast:
+    description: Brief's made to last value creation
+    type: string
+    enum: [1,2,3,4,5]
+  responsibleProd:
+    description: Brief's made from sustainable and recycled ressources value creation
+    type: string
+    enum: [1,2,3,4,5]
+  safeForPlanet:
+    description: Brief's safe for planet & people value creation
+    type: string
+    enum: [1,2,3,4,5]
+  subDepartment5:
+    description: Brief Sub Department 5
+    $ref: "./enum/SubDepartement.yaml"
+  subDepartment4:
+    description: Brief Sub Department 4
+    $ref: "./enum/SubDepartement.yaml"
+  subDepartment3:
+    description: Brief Sub Department 3
+    $ref: "./enum/SubDepartement.yaml"
+  subDepartment2:
+    description: Brief Sub Department 2
+    $ref: "./enum/SubDepartement.yaml"
+  subDepartment1:
+    description: Brief Sub Department 1
+    $ref: "./enum/SubDepartement.yaml"
+  returnRateTarget:
+    description: Brief's target return rate
+    type: number
+  returnRateCurrent:
+    description: Brief's current return rate
+    type: number
+  pitch:
+    description: Pitch
+    type: string
+  intellectualProperty:
+    description: Intellectual property
+    type: boolean
+  family5:
+    description: Brief's Family 5
+    $ref: "./enum/Family.yaml"
+  family4:
+    description: Brief's Family 4
+    $ref: "./enum/Family.yaml"
+  family3:
+    description: Brief's Family 3
+    $ref: "./enum/Family.yaml"
+  family2:
+    description: Brief's Family 2
+    $ref: "./enum/Family.yaml"
+  family1:
+    description: Brief's Family 1
+    $ref: "./enum/Family.yaml"
+  factorOfSuccess:
+    description: "KEY FACTORS OF SUCCESS : PROJECT RISK & OPPORTUNITY (IES)"
+    type: string
+  briefSelectionRate:
+    description: Selection
+    type: number
+  briefConceptionRate:
+    description: Conception
+    type: number
+  briefCoDevelopementRate:
+    description: Co-development
+    type: number
+  department5:
+    description: Brief's Department 5
+    $ref: "./enum/Department.yaml"
+  department4:
+    description: Brief's Department 4
+    $ref: "./enum/Department.yaml"
+  department3:
+    description: Brief's Department 3
+    $ref: "./enum/Department.yaml"
+  department2:
+    description: Brief's Department 2
+    $ref: "./enum/Department.yaml"
+  department1:
+    description: Brief's Department 1
+    $ref: "./enum/Department.yaml"
+  customerFeedbackTarget:
+    description: Brief's target customer feedback
+    type: number
+  customerFeedbackCurrent:
+    description: Brief's current customer feedback
+    type: number
+  afterSalesServiceTarget:
+    description: Brief's target after sales service
+    type: string
+    enum: [Yes, No]
+  afterSalesServiceCurrent:
+    description: Brief's current after sales service
+    type: string
+    enum: [Yes, No]
+  projectQualityManager:
+    description: Project Quality Manager *PQM*
+    $ref: "./generic/user.yaml"
+  serialLifeManager:
+    description: Industrial Serial Life Manager
+    $ref: "./generic/user.yaml"
+  supplyChainOrganizer:
+    description: Supply Chain Organizer *SCO*
+    $ref: "./generic/user.yaml"
+  procurementManager:
+    description: Procurement Manager *RAF*
+    $ref: "./generic/user.yaml"
+  purchasingLeader:
+    description: Purchasing Leader *PL*
+    $ref: "./generic/user.yaml"
+  sourcingManager:
+    description: Sourcing Manager
+    $ref: "./generic/user.yaml"
+  industrializationManager:
+    description: Industrialization Manager
+    $ref: "./generic/user.yaml"
+  projectManager:
+    description: Project Manager *RCP*
+    $ref: "./generic/user.yaml"
+  productCommunityManager:
+    description: Product Community Manager *PCM*
+    $ref: "./generic/user.yaml"
+  instructionManualManager:
+    description: Instruction Manual Manager *IMM*
+    $ref: "./generic/user.yaml"
+  marketLeader:
+    description: Market Leader
+    $ref: "./generic/user.yaml"
+  categoryLeader:
+    description: Category Leader
+    $ref: "./generic/user.yaml"
+  developmentLeader:
+    description: Development Leader *DL*
+    $ref: "./generic/user.yaml"
+  cooperationLeader:
+    description: Cooperation Leader *CL*
+    $ref: "./generic/user.yaml"
+  communicationManager:
+    description: Communication Manager (CCO)
+    $ref: "./generic/user.yaml"
+  businessSerialLifeManager:
+    description: Business Serial Life Manager
+    $ref: "./generic/user.yaml"
+  packagingManager:
+    description: Packaging Manager
+    $ref: "./generic/user.yaml"
+  industrialDrawer:
+    description: Industrial Drawer
+    $ref: "./generic/user.yaml"
+  industrialBuyer:
+    description: Industrial Buyer
+    $ref: "./generic/user.yaml"
+  industrialLeader:
+    description: Industrial Leader *IL*
+    $ref: "./generic/user.yaml"
+  designer:
+    description: Designer
+    $ref: "./generic/user.yaml"
+  productEngineer:
+    description: Product Engineer
+    $ref: "./generic/user.yaml"
+  buLeader:
+    description: BU leader
+    type: string
+    enum: [01. LM France, 02. Weldom Integres, 03. Weldom Services, 04. LM Spain, 05. Aki Spain, 06. LM Italy, 07. Bricocenter, 08. LM Russia, 09. LM Poland, 10. LM Brazil, 11. LM Portugal, 12. Aki Portugal, 13. LM Greece / Cyprus, 14. LM South Africa, 15. LM Ukraine, 16. LM Romania, 17. Bricoman Fr, 18. Bricoman Pol, 19. Bricoman It, 20. Bricomart, 22. Zodio Brazil, 23. Zodio France, 24. Zodio Italy, 25. Alice Delice]
+  productManagerLeader:
+    description: Product Manager Leader *PML*
+    $ref: "./generic/user.yaml"
+  coLeaderProductManager2:
+    description: Co-Leader Product Manager 2
+    $ref: "./generic/user.yaml"
+  coLeaderProductManager1:
+    description: Co-Leader Product Manager 1
+    $ref: "./generic/user.yaml"
+  categoryManager:
+    description: Category Manager
+    $ref: "./generic/user.yaml"
+  cpLmRussia:
+    description: CP LM Russia
+    $ref: "./generic/user.yaml"
+  cpLmBrazil:
+    description: CP LM Brazil
+    $ref: "./generic/user.yaml"
+  cpLmPoland:
+    description: CP LM Poland
+    $ref: "./generic/user.yaml"
+  cpLmItaly:
+    description: CP LM Italy
+    $ref: "./generic/user.yaml"
+  cpLmSouthAfrica:
+    description: CP LM South Africa
+    $ref: "./generic/user.yaml"
+  cpLmPortugal:
+    description: CP LM Portugal
+    $ref: "./generic/user.yaml"
+  cpZodioBrazil:
+    description: CP Zodio Brazil
+    $ref: "./generic/user.yaml"
+  cpLmSpain:
+    description: CP LM Spain
+    $ref: "./generic/user.yaml"
+  cpLmRomania:
+    description: CP LM Romania
+    $ref: "./generic/user.yaml"
+  cpLmUkraine:
+    description: CP LM Ukraine
+    $ref: "./generic/user.yaml"
+  cpBricomanIt:
+    description: CP Bricoman It
+    $ref: "./generic/user.yaml"
+  cpZodioFrance:
+    description: CP Zodio France
+    $ref: "./generic/user.yaml"
+  cpBricomanPol:
+    description: CP Bricoman Pol
+    $ref: "./generic/user.yaml"
+  cpLmFrance:
+    description: CP LM France
+    $ref: "./generic/user.yaml"
+  cpLmGreeceCyprus:
+    description: CP LM Greece / Cyprus
+    $ref: "./generic/user.yaml"
+  cpBricomart:
+    description: CP Bricomart
+    $ref: "./generic/user.yaml"
+  cpWeldomServices:
+    description: CP Weldom Services
+    $ref: "./generic/user.yaml"
+  cpBricomanFr:
+    description: CP Bricoman Fr
+    $ref: "./generic/user.yaml"
+  cpBricocenter:
+    description: CP Bricocenter
+    $ref: "./generic/user.yaml"
+  salesCreation:
+    description: Brief's project sales creation (K€)
+    type: number
+  roi:
+    description: Brief's R.O.I. (year)
+    type: number
+  ressourceCost:
+    description: Brief's development costs - human resources (K€)
+    type: number
+  projectSalesPerStoreAtTtm:
+    description: Project Sales / Store at TTM (K€)
+    type: number
+  projectPercentageSales:
+    description: Brief's project % sales i1, i2
+    type: number
+  projectNbReferenceI2:
+    description: Brief's global number of MatrixID i2
+    type: integer
+  projectNbReferenceI1:
+    description: Brief's global number of MatrixID i1
+    type: integer
+  projectNbReference:
+    description: Brief's global number of MatrixID
+    type: integer
+  projectionSales:
+    description: Brief's turnover project projection (K€)
+    type: number
+  projectionQtityBu:
+    description: Brief's projection quantity of BU
+    type: integer
+  projectionExtraMargin:
+    description: Brief's new sales extra margin (K€)
+    type: number
+  overheadCost:
+    description: Brief's dvpt costs - overheads (K€)
+    type: number
+  listOfBu:
+    description: Brief's list of BU
+    type: string
+  implementCost:
+    description: Brief's implementation costs - BU + Adeo (K€]
+    type: number
+  purchasingGains:
+    description: Brief's purchasing gain (K€)
+    type: number
+  purchasingGainsRate:
+    description: Brief's purchasing gain (%)
+    type: number
+  projectionSalesFullYearTtm:
+    description: TO Sales Full year projection - Brief (K€)
+    type: number
+  newSalesExtraMargin:
+    description: Extra margin from new sales (K€)
+    type: number
+  existingPerimeterTo:
+    description: TO Sales Full year existing perimeter - Brief (K€)
+    type: number
+  purchaseAmount:
+    description: Purchasing Amount - Brief (K€) 
+    type: number
+  ressources:
+    type: array
+    items:
+      type: object
+      properties:
+        type:
+          description: Ressources type
+          type: string
+        category:
+          description: Ressources category
+          type: string
+          enum: [Customer Study, Conception, Quality, PackagingCom, Packing, Notice, Other, CPLeader, TrendCustomerKnowledge, Products, IndustrialConception, SupplyChain, Purchasing, Others]
+        oVorRessourceY:
+          description: Ressources days for Y
+          type: number
+        oVorRessourceY1:
+          description: Ressources days for Y+1
+          type: number
+        oVorRessourceY2:
+          description: Ressources days for Y+2
+          type: number
+        oVorRessourceY3:
+          description: Ressources days for Y+3
+          type: number
+        totalDays:
+          description: Ressources Total Days
+          type: number
+        totalCost:
+          description: Total resssouces costs
+          type: number
+  offices:
+    type: array
+    items:
+      type: object
+      properties:
+        region:
+          description: Office region
+          type: string
+        leader:
+          description: Current office leader
+          type: boolean
+        challenger:
+          description: Current office challenger
+          type: boolean
+  overheads:
+    type: array
+    items:
+      type: object
+      properties:
+        type:
+          description: Overheads type
+          type: string
+        responsible:
+          description: Overheads responsible role
+          type: string
+        oVorRessourceY:
+          description: Overheads days for Y
+          type: number
+        oVorRessourceY1:
+          description: Overheads days for Y+1
+          type: number
+        oVorRessourceY2:
+          description: Overheads days for Y+2
+          type: number
+        oVorRessourceY3:
+          description: Overheads days for Y+3
+          type: number
+        totalCost:
+          description: Total overheads costs
+          type: number
+        

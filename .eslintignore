@@ -1,0 +1,7 @@
+coverage
+docs
+**/node_modules/**
+.reports
+**/lib/**
+**/dist/**
+*.config.js

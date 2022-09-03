@@ -1,0 +1,8 @@
+name: TTM
+in: path
+description: TTM Product Development
+required: true
+schema:
+    type: string
+    example: 2020
+    pattern: '^[0-9]{4}$'

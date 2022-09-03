@@ -1,0 +1,38 @@
+name: Open API documentation
+
+on:
+  push:
+    branches:
+      - openapi
+
+env:
+  NODE_VERSION: 14
+
+jobs:
+
+  openapi:
+    name: Generate the openapi documentation for Github env.VAULT_PACKAGE_SCOPE
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - run: npm ci
+
+      - name: Generate api-docs.yaml
+        run: npm run build:openapi
+
+      - name: Git config
+        run: |
+          git config user.name [bot]Github-Actions
+          git config user.email github-action@users.noreply.github.com
+
+      - name: Commit new swagger.json
+        run: |
+          git add docs/swagger.json
+          git commit -m "chore(openapi): update the swagger"
+          git push

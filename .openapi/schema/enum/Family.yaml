@@ -1,0 +1,1602 @@
+type: string
+enum:
+  - 0001 - Steel, aluminium and plastic profiles
+  - 0002 - Hinges, corner irons, tangs for portals and shutters
+  - 0004 - Building closures and fixings
+  - 0005 - Decorative ventilation grids
+  - 0007 - Entry door handles and knockers
+  - 0010 - Mail boxes
+  - 0012 - Accessories for door and window handles
+  - 0013 - Door armouring
+  - 0014 - Accessories for sliding doors
+  - 0016 - Door and window security accessories
+  - 0017 - People safety accessories
+  - 0018 - Door stoppers
+  - 0019 - Signing
+  - 0020 - Safes and cash boxes
+  - 0021 - Door chain, judas window and door closer
+  - 0022 - Door and window bolts and espagnolette bolts
+  - 0023 - Padlocks, anti-theft devices and padlock hasps
+  - 0025 - Hinge plates, hinges and drop hinges for doors and furniture
+  - 0026 - Furniture locks and bolts, catches
+  - 0027 - Drawer slides
+  - 0028 - Hasps, assembly corner irons and trunnions
+  - 0029 - Cases and shoes repairing accessories
+  - 0030 - Radiator sheets and covers
+  - 0031 - Felts, tips and pads
+  - 0032 - Furniture legs and accessories
+  - 0033 - Wheels and casters
+  - 0034 - Coat hangers
+  - 0035 - Nails
+  - 0036 - Chipboard and wood screws
+  - 0037 - Bolts
+  - 0038 - Threaded stud bolt, washers and nuts
+  - 0040 - Wall hooks
+  - 0041 - Mirror fixing pads
+  - 0043 - Piano springs and strings
+  - 0044 - Universal fixing plugs
+  - 0045 - Chains and accessories
+  - 0046 - Bottle storage and bottling accessories
+  - 0047 - Utility shelves in wood
+  - 0048 - Utility shelves in metal
+  - 0050 - Consoles, Racks and Squares
+  - 0051 - Sliding and fixing cupboard interior accessories
+  - 0052 - Storage hooks, grilles and storage panels
+  - 0053 - Fixing systems for Tv , HiFi , Computer , kitchen appliances etc
+  - 0054 - Plastic storage boxes and screws boxes
+  - 0055 - Step ladders and step stools
+  - 0056 - Trestles
+  - 0057 - Bathroom bins
+  - 0058 - Handtrucks and pallet trucks
+  - 0059 - Wallpaper with plain or semi plain colours
+  - 0060 - Natural and other coverings (textile, coark, etc)
+  - 0061 - Glass fiber and lining paper for painting
+  - 0066 - Framed and non-framed images
+  - 0067 - Voiles ready for hanging (filtering)
+  - 0069 - Soft furnishing and haberdashery supplies
+  - 0073 - Pelmets and accessories
+  - 0074 - Aluminium Venetian blinds, not including accessories
+  - 0075 - Door curtains
+  - 0076 - Ceiling tiles
+  - 0077 - Decorative mouldings
+  - 0078 - Adhesives in rolls
+  - 0079 - Oilclothes and plasticized tableclothes
+  - 0081 - Spanners and wrenches
+  - 0082 - Screwdrivers manual and Allen wrench
+  - 0083 - Pliers and wirecutters
+  - 0084 - Clamps and vices
+  - 0085 - Hammers
+  - 0087 - Hand saws (except blades)
+  - 0088 - Files and rasps
+  - 0089 - Wood chisels
+  - 0090 - Planes and plane blades
+  - 0091 - Measuring tapes and foldable measuring
+  - 0092 - Manual measuring tools (Squares, calipers, compas and rulers)
+  - 0093 - Manual and laser tracing tools
+  - 0094 - Hand stapler
+  - 0095 - Staples and nails
+  - 0096 - Glue guns
+  - 0097 - Rivetters and rivets
+  - 0100 - Mason tools (trowels, floats, smoothing trowels etc )
+  - 0104 - Other painting tools and accessories
+  - 0105 - Spirits levels and mason/tilers rulers
+  - 0106 - Buckets, troughs
+  - 0109 - Breaking tools (cold chisels, pegs, stone chisels etc)
+  - 0110 - Manual tile cutter
+  - 0112 - Spacers
+  - 0114 - Scrapers glue spreaders and spatulas
+  - 0116 - Masking and protection tapes
+  - 0119 - Wallpapering tools
+  - 0120 - Steam wallpaper remover
+  - 0122 - Cutters, knives, blades and cutting guides
+  - 0123 - Tiler and glazier tools (tile cutter, knee pad, suckers, glass cutter etc)
+  - 0124 - Scissors
+  - 0125 - Paint sprays guns
+  - 0126 - Hot air paint strippers
+  - 0130 - Plumbing tools to work incoming and outcoming liquids
+  - 0132 - Gas Welding
+  - 0133 - Refill for gas welding
+  - 0135 - Electric welding
+  - 0136 - Arc welding and MIG TIG
+  - 0137 - Consumables and accessories for soldering iron
+  - 0138 - Welders electrodes and consumable
+  - 0140 - Power drills corded
+  - 0141 - Perforators corded
+  - 0143 - Power drills cordless
+  - 0144 - Screwdrivers cordless
+  - 0146 - Jigsaw corded
+  - 0147 - Saber saw
+  - 0148 - Circular saws corded
+  - 0149 - Nibbling machine and shearing machine
+  - 0150 - Sanding machines
+  - 0151 - Planes
+  - 0153 - Routers
+  - 0154 - Grinders and wall chaser corded
+  - 0155 - Wood drill bits and sets
+  - 0156 - Hole saw and circle cutter
+  - 0157 - Hand drill and awl (Hand drilling tools)
+  - 0159 - Taps and dies
+  - 0160 - Manual abrasives
+  - 0161 - Grinding disks
+  - 0163 - Brushes for power tools
+  - 0164 - Hand brushes and accessories
+  - 0166 - Power saw blades
+  - 0167 - Handsaw blades
+  - 0168 - Screwdriver tips
+  - 0172 - Plate and pin assembly template
+  - 0173 - Chucks and chuck keys
+  - 0174 - Drill mills and rasps
+  - 0175 - Liquid product mixer tool
+  - 0176 - Stands for power tools
+  - 0177 - Funnels, oil cans
+  - 0178 - Lubricants for mechanical equipment
+  - 0179 - Hand protection (gloves)
+  - 0180 - Face and head protection and safety
+  - 0181 - Individual body protection and knee pads inserts
+  - 0182 - Powertools accessories (waterpump for drills, tray for sanding machines…)
+  - 0183 - Workbenches and accessories
+  - 0184 - Utility cabinets in metal
+  - 0186 - Vices and anvils
+  - 0187 - Drill presses
+  - 0188 - Bench grinder
+  - 0189 - Water and dust vacuum cleaners
+  - 0191 - Vaccum cleaner accessoiries
+  - 0192 - Mitre saw
+  - 0193 - Accessories and consumables for wood and metal machines
+  - 0195 - Compressors
+  - 0196 - Accessories for compressor
+  - 0197 - Pneumatic tools
+  - 0198 - Generators
+  - 0199 - Winches and hoists
+  - 0200 - Needled carpet rolls
+  - 0202 - Vegetable fibre rug(excluding bathrooms)
+  - 0204 - Threshold bars, stair rods and accessories for vinyl and carpet flooring
+  - 0205 - Solvent-based gloss paints (excluding base )
+  - 0206 - Undercoats, primers and fixatives
+  - 0207 - Colorants and pigments
+  - 0209 - Interior stains
+  - 0210 - Wood treatment products
+  - 0211 - Furniture restoration and cleaning accessories
+  - 0212 - Furniture and objects restoration products
+  - 0214 - Floor restoration and cleaning products
+  - 0215 - Paint brushes
+  - 0217 - Brooms, brushes and other household accessories
+  - 0219 - Wiping accessories (sponges, skins, rags, mops)
+  - 0220 - Paint trays and grills
+  - 0221 - Poles
+  - 0222 - Rollers for paint, refills and handles
+  - 0225 - Strippers
+  - 0226 - Household and cleaning products
+  - 0227 - Drain cleaning and septic tanks products
+  - 0229 - Fire extinguishers and smoke detector
+  - 0232 - Caulking guns and PU foam guns
+  - 0233 - Polyester resins
+  - 0235 - Canopies, marquise canopies
+  - 0237 - Garage doors, and accessories
+  - 0239 - Pvc windows , french windows and accessories
+  - 0241 - Skylights and accessories
+  - 0243 - Wing shutters, shutters and accessories
+  - 0245 - Exterior blinds and accessories
+  - 0249 - Loft ladders
+  - 0250 - Staircase accessories
+  - 0251 - Mezzanines
+  - 0252 - Banisters, handrails, balustrades
+  - 0253 - Safety barriers
+  - 0255 - Secondary glazing, insulating and safety films for glazing
+  - 0256 - Verandas and metal structures
+  - 0257 - Beadings
+  - 0258 - Wood boards
+  - 0259 - Profiles and accessories
+  - 0261 - Wood mouldings
+  - 0262 - Wood skirtings
+  - 0265 - chipboards and osb slabs
+  - 0266 - RAW Chipboard panels
+  - 0267 - Regular plywood
+  - 0269 - MDF and fibreboard panels
+  - 0271 - Oriented Strand Board (O.S.B.)
+  - 0272 - Melamine and veneered plywood
+  - 0274 - Solid wood panels
+  - 0275 - White melamine boards
+  - 0276 - Solid wood boards
+  - 0277 - Wall shelves in glass
+  - 0279 - Folding wardrobe doors
+  - 0280 - Accessories for wardrobe doors
+  - 0281 - Flat pack standard equipment (kit dressing)
+  - 0282 - Furniture cabinets and shelves
+  - 0283 - Laminated worktops
+  - 0285 - Splashbacks
+  - 0286 - Boards for tables and desks
+  - 0287 - Kitchen cabinets and doors
+  - 0288 - Kitchen cabinets finishing items (end panels, skirting, fillers, etc.)
+  - 0290 - Intenso laminate
+  - 0294 - Parquets other materials
+  - 0295 - PVC paneling
+  - 0296 - Paneling fitting accessories
+  - 0298 - Rigid interior decorative panels
+  - 0299 - Canework
+  - 0302 - Clip-frames
+  - 0303 - Framing accessories
+  - 0304 - Easels and accessories for fine arts
+  - 0307 - Grass seeds
+  - 0308 - Flower and vegetable seeds
+  - 0309 - Green and flowering plants
+  - 0310 - Cut flowers and bunches
+  - 0312 - Bulbs
+  - 0313 - Rose trees, trees and shrubs
+  - 0314 - Greenhouses and conservatories
+  - 0316 - Crop protection films, tunnels
+  - 0318 - Garden stakes
+  - 0319 - Various horticultural accessories
+  - 0320 - Soils and substrates
+  - 0321 - Fertilizers
+  - 0322 - Weedkillers and moss treatment
+  - 0323 - Insecticides and pesticide treatments for plants
+  - 0325 - Anti slugs, mice and polisheds
+  - 0329 - Garden hoses
+  - 0332 - Watering can and showerhead
+  - 0333 - Watering programmers
+  - 0335 - Drop by drop sprinkling system
+  - 0340 - Electric brush cutters
+  - 0341 - Electric grass trimmers
+  - 0342 - Electric hedge trimmers and pole hedge trimmers
+  - 0344 - Snow shovels
+  - 0345 - Electric tillers and cultivators
+  - 0346 - Electric chain saw
+  - 0347 - Shredders
+  - 0349 - Electric blowers and vacuum cleanners
+  - 0350 - Electrical high pressure cleaners
+  - 0351 - High pressure cleanners accessories and expendabels (sand, detergent)
+  - 0353 - Log splitters
+  - 0356 - Grille fencing in rolls
+  - 0357 - Wire fence laying accessories
+  - 0358 - Borders for garden
+  - 0359 - View screens, wind screens and shadding nets
+  - 0360 - Mosquito screens
+  - 0361 - laundry dryers and clothespins
+  - 0362 - Wood and composite doors and gates
+  - 0366 - Decorative ponds and accessories
+  - 0372 - Charcoal and wood barbecues
+  - 0373 - Barbecue grills and accessories
+  - 0388 - Garden wheelbarrows
+  - 0392 - DIY and building library
+  - 0402 - Motors
+  - 0403 - After-sales service
+  - 0404 - Equipment rental
+  - 0405 - Fitting service
+  - 0406 - Voile and curtain making
+  - 0407 - Customer project service
+  - 0419 - Rainwater tanks more than 500 l
+  - "0429 - Wood : 48 codes, unallocated and miscellaneous"
+  - 0430 - Injected resin dinning set (tables, chairs, armchairs, benches)
+  - 0435 - Sun umbrellas
+  - 0440 - Ladders
+  - 0442 - Concrete mixers
+  - 0443 - Scaffolding
+  - 0445 - Props, trestles and bird plates
+  - 0446 - Cements
+  - 0447 - Lime
+  - 0448 - Sands and aggregates
+  - 0449 - Concretes
+  - 0450 - Mortars
+  - 0451 - Plaster
+  - 0452 - Steel reinforcing for concrete and forwork
+  - 0458 - Septic tanks and accessories
+  - 0461 - Terra cotta roofing
+  - 0465 - PVC gutters, downpipes and accessories
+  - 0466 - Chases and syphons
+  - 0467 - Discharges manholes
+  - 0472 - Plasterboard
+  - 0476 - Fireplace kits coating
+  - 0479 - Concrete and terracotta slabs
+  - 0480 - Paving
+  - 0491 - Bonding glues
+  - 0492 - Waterproofing sealants
+  - 0493 - Waterproofing and humidity exterior treaments
+  - 0494 - Door and window draughtproofing
+  - 0496 - Powder filler
+  - 0497 - Facade coating
+  - 0498 - Road salt
+  - 0500 - Ceiling fans with light
+  - 0501 - Appliques (hors composable et led intégrée)
+  - 0502 - Ceiling lamps (except composable and led integrated)
+  - 0503 - Table lamps with lampshades
+  - 0504 - Lampshades
+  - 0505 - SP - chandeliers and pendants
+  - 0506 - Floor lamp with lampshade
+  - 0507 - Halogen recessed spotlights
+  - 0508 - Outdoor hightpost light
+  - 0511 - Flexible conduit
+  - 0512 - Armoured hoses for water
+  - 0513 - Collars, attachments and fixing accessories
+  - 0515 - Water and gas seals
+  - 0516 - Service taps and stopcocks
+  - 0519 - Bathroom faucets accessories
+  - 0520 - Shower heads
+  - 0521 - shower Hoses
+  - "0522 - Shower accessories: bars, support,slider, shelf, soapdish"
+  - 0525 - Water treatment appliances
+  - 0526 - Water treatment accessories
+  - 0531 - Water treatment consumables
+  - 0532 - Plumbing appliance draincocks, syphons and accessories
+  - "0533 - Washing machine : supply and outlet"
+  - "0534 - Domestic waste grinders: WC and sinks"
+  - 0535 - WC outlet pipe
+  - 0536 - WC cistern and other mechanisms
+  - 0537 - SP -WC mechanisms and equipment
+  - 0538 - Plumbing appliance accessories and fixing
+  - 0540 - Water heater instant gas
+  - 0541 - Gas and water supply equipment
+  - 0543 - Accesories for water heater fitting and connections
+  - 0545 - Boiler gas and wall-mounted
+  - 0547 - Accessories for boiler and burner
+  - 0548 - Heating system cleaning products
+  - 0549 - Connected thermostats
+  - 0550 - Floor heating for boilers
+  - 0551 - Radiators aluminium for central heating
+  - 0552 - Accessories for central heating radiators
+  - 0553 - Fixed convectors
+  - 0555 - Accessories for mobile fuel heating
+  - 0556 - Paraffin oil / kerosene fuel
+  - 0557 - Accessories for aerators, extractors and CMV
+  - 0558 - Fireplace smoke extraction and aeration gratings
+  - 0560 - Washbasins with pedestal
+  - 0561 - Bidets
+  - 0562 - Resin and solid surface basins
+  - 0564 - Installation accessories bathtubs
+  - 0565 - Accessories for shower trays installation (feet, panels, …)
+  - 0566 - Acrylic bath screens
+  - 0568 - Sauna, steam room
+  - 0569 - Complete hydromassage cabins
+  - 0570 - Complements & accessories for shower cubicle and enclosures (stickers, …)
+  - 0571 - Polyester/PVC curtains for shower
+  - 0572 - Curtain rails and accessories for shower
+  - 0573 - Wall mounted bathroom and WC accessories for safety
+  - 0574 - Wooden toilet seats
+  - 0575 - Mirrors with light for bathroom
+  - 0576 - Accessories for bathroom mirrors
+  - 0577 - Mirrors without light for bathroom
+  - 0578 - bathroom mirror cabinet without lighting
+  - 0582 - FURNITURE FOR PIEDESTAL BASIN
+  - 0584 - Kitchen doors and drawer kits
+  - 0586 - Kitchen cabinets
+  - 0589 - BATHROOM COLUMNS AND DEMI COLUMNS FURNITURE ASSEMBLED
+  - 0591 - Mirrors for bathroom furniture
+  - 0592 - SP - BATHROOM FURNITURE, MIRRORS & CABINETS
+  - 0593 - Laundry bag, basket,hamper
+  - 0594 - WC (Tank + bowl)
+  - 0595 - Safety and community sanitary appliances
+  - 0596 - Handbasins
+  - 0597 - Extras for sinks
+  - 0603 - Ceramic skirtings
+  - 0604 - Preparation for Flooring
+  - 0605 - Grouting for tiles
+  - 0606 - Floor tiling glues in paste
+  - 0607 - Additives for concrete and powders
+  - 0608 - Surface-mounted monobloc switches and sockets
+  - 0609 - Remote control
+  - 0612 - Box for building-in electrical mechanisms
+  - 0613 - Accessories for switches and power points
+  - 0614 - Plugs and adapters
+  - 0615 - Multisockets
+  - 0616 - Bulb holders
+  - 0618 - Breakout and junction box
+  - 0619 - Terminal strips, connectors and other electrical accessories
+  - 0621 - Distribution box
+  - 0622 - Circuit breaker for distribution box
+  - 0623 - Dimmable switches
+  - 0624 - Fuses, electrical protection cartridges
+  - 0625 - Rigid electrical wires and cables
+  - 0626 - Mouldings, ducts, skirtings and accessories for electric wires
+  - 0627 - Cable reels
+  - 0628 - Extension cords
+  - 0630 - Portable lighting and accessories
+  - 0631 - Halogen bulbs
+  - 0632 - Incandescent tubes
+  - 0633 - Satellite antennas for image reception
+  - 0634 - Accessories for satellite antennas
+  - 0635 - Accessories for ground antennas
+  - 0637 - Accessories and connections for hifi and video
+  - 0638 - Doorchime
+  - 0639 - Intercoms
+  - 0640 - Door video and auidiophones
+  - 0641 - Alarm base station
+  - 0642 - Presence and motion detectors
+  - 0643 - Alarm control devices and keypad
+  - 0644 - Alarm sirens
+  - 0645 - Other alarm accessories
+  - 0646 - Complete alarm system (kit)
+  - 0647 - Cctv camera
+  - 0648 - Batteries, accumulators, chargers, power banks and accessories
+  - 0649 - Electrical measuring equipment and accessories
+  - 0650 - Fixed phone
+  - 0656 - Motors for windows, doors and shutters
+  - 0658 - CMV - Controlled mechanical ventilation
+  - 0659 - Aerators and extractors
+  - 0661 - Kitchen extractor hood accessories
+  - 0662 - Split and multisplit fixed air conditioners
+  - 0663 - Accessories for Air conditioning
+  - 0664 - Fans
+  - 0665 - Ceiling fans without light
+  - 0666 - Mobile air treatment (humidifiers, dehumidifiers, purifiers, etc)
+  - 0667 - Centralized aspirators and accessories
+  - 0674 - Aprons for bathtubs
+  - 0675 - SP - Bathroom Faucets
+  - 0678 - SP- hot water production systems
+  - 0683 - SP - air conditioning ventilation
+  - 0685 - Accessories for wooden flooring
+  - 0687 - Solvents and thinners
+  - 0688 - Pvc entry doors and accessories
+  - 0691 - Indoor dirt-trapper mats
+  - 0692 - Soft furnishings and fabric borders
+  - 0693 - Curtains ready for hanging (dim out)
+  - 0709 - Service doors
+  - 0720 - Drainage connections less than 80 mm
+  - 0721 - Connections for electrical tubes cables and wires
+  - 0722 - Water and gas supply pipes in copper
+  - 0724 - Rigid drainpipes from 80 mm in diameter and accessoires
+  - 0725 - Tubes for electrical cables and wires
+  - 0726 - Extending doors , swing doors and accessories
+  - 0733 - Wallpaper friezes and stripes
+  - 0734 - Accessories for blinds
+  - 0735 - Mitre block for sawing
+  - 0737 - Miniature power tools corded
+  - 0738 - Multifunction power tools (spatulas, knives, etc )
+  - 0739 - Wooden storage boxes and blocks
+  - 0746 - Earth spikes
+  - 0748 - sliding Bay windows
+  - 0749 - Adhesive tapes
+  - 0750 - Radiator valves for central heating
+  - 0752 - Wall, friezes and borders
+  - 0754 - Synthetic glass
+  - 0755 - Mineral glass , stained glass and accessories
+  - 0759 - Marine plywood
+  - 0760 - Unfinished beadings
+  - 0766 - Steam cleaners and accessories
+  - 0769 - Pvc planks & tiles to click
+  - 0770 - Bathmats (outside the shower)
+  - 0774 - Fabrics textile cut to order (except table linen)
+  - 0775 - Cafe rods and accessories
+  - 0778 - Curtain poles - cables and accessories for cables (including kits)
+  - 0780 - Rails and technical poles (inc.kits and accessories)
+  - 0782 - Textile roller blinds, not including accessories
+  - 0783 - Interior vertical adjustable blinds with accessories
+  - 0784 - Textile roman blinds, not including accessories
+  - 0785 - Japanese panels, including rails
+  - 0789 - Kitchen extractor hoods
+  - 0790 - Undercoats for flooring
+  - 0791 - varnishes and oils for wood parquet flooring
+  - 0792 - Dado panels and accessories
+  - 0793 - Decorative polyurethane and wood beams
+  - 0795 - Pvc and laminated veneer edging and accessories
+  - 0799 - Interior wood varnishes
+  - 0800 - Exterior furniture oils
+  - 0803 - Hobbycraft paintings
+  - 0804 - Fixed barbecue and outdoor kitchen
+  - 0810 - Fireplace fuels, wood, pellet and briquets
+  - 0814 - Hydromassage bathtubs (jacuzzi)
+  - 0815 - Selfstanding towelhanger
+  - 0817 - Oil and lubricant for motorized garden equipment
+  - 0819 - Keys and keyholes
+  - 0820 - Window stays and slides
+  - 0821 - Grids
+  - 0823 - Handshower
+  - "0824 - Shower trio: handshower+hose+with or w/o support"
+  - 0830 - Thin heat-reflecting insulation
+  - 0836 - Hardware for gate and shutters closure
+  - 0838 - Water pressure reducers
+  - 0839 - Garden benches
+  - 0840 - Garden cushions
+  - 0841 - Garden furniture covers
+  - 0845 - Bathroom scales
+  - 0846 - Water-based spray paints
+  - 0851 - Bathroom stools
+  - 0854 - Plasterer tools
+  - 0855 - Shoes storage organisers
+  - 0857 - Hanging rails and accessories
+  - "0860 - Materials: 48 codes, unallocated and miscellaneous"
+  - "0861 - Electricity - Plumbing : 48 codes, unallocated and miscellaneous"
+  - "0862 - Tools: 48 codes, unallocated and miscellaneous"
+  - "0863 - Flooring: 48 codes, unallocated and miscellaneous"
+  - "0864 - Tiling: code 48, unclassified and miscellaneous items"
+  - "0865 - Bathroom: 48 codes, unallocated and miscellaneous"
+  - "0866 - Comfort : code 48 unclassified and miscellaneous items"
+  - "0867 - Garden - Outdoor : 48 codes, unallocated and miscellaneous"
+  - "0868 - Hardware : 48 codes, unallocated and miscellaneous"
+  - "0869 - Storage : code 48, unclassified and miscellaneous items"
+  - "0870 - Paint: code 48 unclassified and miscellaneous items"
+  - "0871 - Decoration: 48 codes, unallocated and miscellaneous"
+  - "0872 - Lighting: 48 codes, unallocated and miscellaneous"
+  - 0878 - Concrete roofing
+  - 0880 - Slate and natural stone roofing
+  - 0881 - Thermic glass wool insulation
+  - 0882 - Thermic stone wool insulation
+  - 0883 - Expanded polystyrene insulation
+  - 0884 - Extruded polystyrene insulation
+  - 0888 - Alveolar plasterboard
+  - 0891 - Wood slabs and planks
+  - 0902 - Other material gutters, downpipes and accessories
+  - 0905 - Interior panels Door, door block, door-frame melamined or laqued
+  - 0906 - Interior panels Door, door block, door-frame in solid wood
+  - 0907 - Glass interior door
+  - 0908 - Fixed staircases (excluding narrow steps)
+  - 0909 - Narrow stairs
+  - 0910 - Massive wood flooring
+  - 0911 - Engineered/Multilayer wood flooring
+  - 0912 - Solid wood paneling
+  - 0915 - Coated paneling
+  - 0916 - Door architraves and uprights, archs
+  - 0917 - Wood cornices
+  - 0918 - Cyma and dado profiles
+  - 0919 - Coated skirtings
+  - 0920 - PVC and other materials skirtings
+  - 0921 - Mobile oil, convector radiators and radiant heating
+  - 0922 - Fixed Inertia Radiators
+  - 0923 - fixed heating pannels
+  - 0924 - Electrical towel racks
+  - 0925 - Mobile fan heaters
+  - 0926 - Infrared heating
+  - 0928 - Accessories for electrical heating
+  - 0929 - Recess monobloc switches and sockets
+  - 0930 - Surface-mounted modular switches
+  - 0931 - Recess modular switches and sockets
+  - 0932 - Surface-mounted waterproof switches
+  - 0933 - Recess waterproof switches and sockets
+  - 0943 - Distribition box not equiped
+  - 0944 - Supply busbar, surge protector and distribution box accessories
+  - 0957 - Flexible electrical wires and cables
+  - 0958 - Tv hifi and network cables
+  - 0959 - Telephone wires and cables
+  - 0962 - Compact fluorescent bulbs (CFL)
+  - 0963 - Incandescent bulbs
+  - 0964 - Fluorescent tubes
+  - 0965 - Outside ground antennas for image reception
+  - 0966 - Interior ground antennas for image reception
+  - 0972 - Accessories for motors for windows, doors and shutters
+  - 0975 - Mobile monobloc air conditioners
+  - 0976 - Air Chillers
+  - 0978 - Accessories and consumables for air treatment
+  - 0980 - Electric fly killer
+  - 0984 - Accessories for tile cutters
+  - 0990 - Metal drill bits and sets
+  - 0991 - Standard concrete drill bits and sets
+  - 0992 - Drill bits for other materials
+  - 0993 - Drill bit sets
+  - 0994 - Abrasives for sanding machines
+  - 0999 - Compressor and generator oil
+  - 1000 - Looped carpet rolls
+  - 1001 - Velvet carpet rolls
+  - 1002 - Structure carpet rolls
+  - 1003 - Natural fibre carpet rolls
+  - 1004 - Artificial grass
+  - 1008 - Wool rug (excluding bathrooms)
+  - 1009 - Polypropylene rugs (excluding bathrooms)
+  - 1010 - Acrylic rug (excluding bathrooms)
+  - 1011 - Other synthetic fibre rug (excluding bathrooms)
+  - 1040 - Wall tiling glues in paste
+  - 1041 - Floor tiling glues in powder
+  - 1042 - Wall tiling glues in powder
+  - 1049 - Ceramic basins
+  - 1052 - Ceramic shower trays
+  - 1054 - Acrylic shower trays
+  - 1057 - Steel shower trays
+  - 1058 - Glass bath screens
+  - 1060 - Acrylic doors and corners for shower enclosures
+  - 1061 - Glass sliding doors for shower enclosures
+  - 1062 - Textile curtains for shower
+  - 1065 - Wall mounted bathroom and wc accessories
+  - 1081 - Selfstanding bathroom and wc accessories
+  - 1085 - Synthetic material seats
+  - 1093 - Floorstanding WC (bowl only)
+  - 1095 - WC Cisterns
+  - 1099 - Fitted stainless steel sinks
+  - 1103 - sandstone / ceramic sinks
+  - 1104 - Built-in stainless steel sinks
+  - 1105 - Synthetic material sinks ( resine, granit, quartz,…)
+  - 1108 - Steel bathtub
+  - 1110 - Acrylic bathtub
+  - 1112 - Bathtubs in other materials
+  - 1114 - Armoured hoses for gas
+  - 1115 - Armoured hoses for fuel
+  - 1118 - High basin faucet
+  - 1121 - Basin faucet
+  - 1124 - Selfstanding basin faucet
+  - 1127 - Built in shower faucet
+  - 1130 - Kitchen mixers faucets
+  - 1134 - Kitchen cartridge mixers faucets
+  - 1143 - Water heater night storage gas
+  - 1144 - Water heater instant electric
+  - 1145 - Water heater night storage electric
+  - 1146 - Boiler gas floor standing
+  - 1147 - Boiler oil fired
+  - 1148 - Boiler wood, pellet and charcoal
+  - 1151 - Radiators steel and cast iron for central heating
+  - 1154 - Portable gas heater
+  - 1155 - Portable paraffine heater
+  - 1156 - Portable bio-ethanol heater
+  - 1157 - Water and gas supply connections - welded
+  - "1158 - Water and gas supply connections : screwed"
+  - "1159 - Water and gas supply connections : bonded"
+  - 1161 - Drainpipes less than 80 mm in diameter
+  - 1165 - Pine bark and straw
+  - 1171 - Garden hoses with connectors
+  - 1176 - Metal, aluminium and iron garden doors and gates
+  - 1177 - PVC doors and gates
+  - 1205 - Swimming pool and spa cleaning and maintenance chemicals
+  - 1212 - Plate door handles
+  - 1215 - Flush-fitted door locks
+  - 1216 - Surface-mounted door locks
+  - 1217 - Multi-point door locks
+  - 1218 - Mechanical and electronic door lock cylinders and keys
+  - 1219 - Accessories for door locks
+  - 1221 - Furniture knobs and pulls
+  - 1232 - Metal screws
+  - 1233 - Plasterboard screws
+  - 1234 - Coach screws/bolts
+  - 1235 - Solid material fixing plugs
+  - 1236 - Hollow material fixing plugs (except placo)
+  - 1237 - Ropes, straps and accessoiries
+  - 1250 - Water-based gloss paints (excluding base)
+  - 1252 - Special paints (excluding base)
+  - 1253 - Finishing paints - bases for tinting machine
+  - 1254 - Exterior stains (hors base)
+  - 1255 - Wallpaper adhesives
+  - 1256 - Adhesives for other wall and ceiling coverings
+  - 1261 - Water-based facade paints (excluding base)
+  - 1263 - Solvent-based facade paints (excluding base)
+  - 1264 - Special exterior paints (excluding base)
+  - 1265 - Exterior wall paints - bases for tinting machine
+  - 1266 - Metal paints (excluding base )
+  - 1267 - Roof paints (excluding base)
+  - 1269 - Special effects wall paints (excluding base)
+  - 1270 - Matt white wall and ceiling paints (excluding base)
+  - 1271 - Ceiling paints
+  - 1273 - Interior floor paints (excluding base )
+  - 1274 - Wood paints (excluding base)
+  - 1280 - Chandeliers and pendants (except composable and led integrated)
+  - 1308 - Lamp base
+  - 1313 - Lampes de bureau
+  - 1319 - Interior spotlights with halogen bulb except composable
+  - 1320 - Rail and cable interior spotlights
+  - 1322 - Incandescent recessed spotlights
+  - 1323 - Interior spotlights with incandescent bulb except composable
+  - 1325 - Outdoor wall lights
+  - 1326 - Outdoor post lights
+  - 1327 - Outdoor medium post lights
+  - 1328 - Outdoor ceiling lights and pendants
+  - 1330 - Outdoor recess spots
+  - 1331 - Outdoor projectors
+  - 1332 - Accessories for outdoor lighting
+  - 1333 - Wood frames, no image
+  - 1334 - Framed mirrors
+  - 1335 - Frame mouldings, all materials
+  - 1340 - Wallpaper to order
+  - 1342 - Voiles cut to order
+  - 1343 - Wood and wood/metal curtain poles and accessories, not kits
+  - 1344 - Metal curtain poles and accessories, not kits
+  - 1346 - Metal curtain pole kits
+  - 1347 - Wood curtain pole kits
+  - 1349 - Decorative cornices
+  - 1350 - Decorative Rosaces
+  - 1351 - Cushions
+  - 1354 - Skylight blinds
+  - 1357 - Utility shelves in resine
+  - 1359 - utility shelves and cabinets in other materials
+  - 1362 - wall shelves inwood and wood derivative
+  - 1365 - resine utility cabinets
+  - 1366 - Wardrobes and other furniture
+  - 1368 - Colored melamine boards
+  - 1369 - Imitation wood melamine boards
+  - 1370 - Veneered boards
+  - 1372 - Standard sliding wardrobe doors
+  - 1373 - Swinging wardrobe doors
+  - 1381 - Wallpaper - imitation material
+  - 1390 - Wallpaper with designs
+  - 1401 - Curtain poles and accessories in other materials (including kits)
+  - 1406 - PVC frames, no image
+  - 1407 - Metal frames, no image
+  - 1408 - Construction site signing
+  - 1411 - Textured exterior roughcasts and coatings
+  - 1413 - Electric locks and latches
+  - 1418 - Screw and magnet covers
+  - 1419 - Plugs pliers
+  - 1421 - Strincking and nailing plugs
+  - 1428 - Aluminium gutters, downpipes and accessories
+  - 1431 - Roller shutters and accessories
+  - "1432 - Ovens : built-in and free standing"
+  - 1433 - Kitchen chairs and stools
+  - 1436 - Garment Racks and wardrobes
+  - 1437 - plastic boxes and contenairs
+  - 1438 - Boxes and baskets - material
+  - 1441 - Storage and bicycle storage hooks
+  - 1443 - Kitchen cupboard and drawer, interior fittings
+  - 1444 - Free standing kitchen accessories
+  - 1452 - PVC trims
+  - 1453 - Metal trims
+  - 1454 - Ceramic steps and nosings
+  - 1456 - Towel rails for central heating
+  - 1457 - Water heater solar panel
+  - 1458 - Rubble bags and big bags
+  - 1461 - Carpet tiles
+  - 1463 - Cotton rug (excluding bathrooms)
+  - 1464 - Corridor Carpet
+  - 1466 - Glues and double-sided adhesive tapes for flooring
+  - 1468 - Stains and varnishes - bases for tinting machine
+  - 1469 - Wall and ceiling paints - bases for tinting machine
+  - 1472 - Kitchen and storage lighting appliances
+  - 1474 - Claddings glues, laying, care and finishes
+  - 1475 - Glues for parkets and laminate flooring
+  - 1478 - Gardening gloves, protection and clothing
+  - 1501 - Car trailers
+  - 1502 - Material wheelbarrow
+  - 1503 - Construction equipment - pending classification
+  - 1504 - Screed for big spaces
+  - 1505 - Powders, sands, aggregates - pending classification
+  - 1506 - Bulk aggregates, sand, gravel, stones and mixtures
+  - 1507 - Big bag aggregates, sand, gravel, stones and mixtures
+  - 1508 - Bagged aggregates, sand, gravel, stones and mixtures
+  - 1510 - Cement blocks
+  - 1511 - Cellular concrete
+  - 1512 - Bricks
+  - 1513 - Connecting, drainage and ventilation elements
+  - 1514 - Construction elementsand timber - pending classification
+  - 1516 - Storm and foul water drainage - pending classification
+  - 1517 - Metal roofing
+  - 1518 - Fiber-cement roofing
+  - 1519 - Asphalt roofing in roll
+  - 1520 - Polycarbonate roofing
+  - 1521 - Polyester and PVC roofing
+  - 1522 - Roofing - pending classification
+  - 1523 - Natural fibre insulation
+  - 1524 - Sound insulation
+  - 1525 - Insulation fitting and bonding accessories
+  - 1526 - Floor, wall and roof waterproofing
+  - 1527 - House insulation - pending classification
+  - 1528 - Plaster tiles
+  - 1529 - Metal frame for plasterboard and ceilings
+  - 1530 - Finishing and fitting accessories for tiles and plasterboard
+  - 1531 - Partitions and internal ceilings - pending classification
+  - 1532 - Glass block
+  - 1534 - Glass block installation structures and supports
+  - 1535 - Adhesives and finishes for glass block
+  - 1536 - Glass block - pending classification
+  - 1537 - Fireplaces and Insert to fit in
+  - 1538 - Wood stoves
+  - 1539 - Pellet stoves
+  - 1540 - Bio-Ethanol Fireplaces
+  - 1541 - Accessories for chimney
+  - 1542 - Maintenance products
+  - 1543 - Fireplaces, Fireboxes, accessories and maintenance products - pending classification
+  - 1544 - Exterior joinery, exterior blinds - pending classification
+  - 1545 - Wood and engineered flooring - pending classification
+  - 1546 - Melaminated or laquered sliding door
+  - 1547 - Doors and interior room dividers - pending classification
+  - 1548 - Coated mouldings
+  - 1549 - PVC and other materials mouldings
+  - 1550 - Wood facings and trims - pending classification
+  - 1551 - Wood panels - pending classification
+  - 1552 - Wall coverings - wood and pvc - pending classification
+  - 1553 - Staircases, mezzanines, balusters - pending classification
+  - 1554 - Glazing - pending classification
+  - 1555 - Power distribution protection - pending classification
+  - 1556 - ELECTRICAL CABLE, SHEATING AND CONNECTIONS ACCESSORIES- pending classification
+  - 1557 - RECEPTION, TRANSMISSION AND DISTRIBUTION OF A SIGNAL - pending classification
+  - 1559 - Electrical underfloor heating
+  - 1560 - Electric heating - pending classification
+  - 1562 - Air conditioning and ventilation - pending classification
+  - 1563 - Photovoltaic solar panels and complete kits
+  - 1564 - Photovoltaic accumulators and batteries
+  - 1565 - Installation accessories and solar terminals
+  - 1566 - Renewable energies for installation - pending classification
+  - 1567 - AUTONOMIOUS ENERGY AND RENEWABLE ENERGY - pending classification
+  - 1568 - Digital measure tools
+  - 1569 - Stapler corded
+  - 1570 - Set of mixed tools
+  - 1571 - Standard hand tools - pending classification
+  - 1572 - Laser levels
+  - 1573 - Electric tile cutter
+  - 1575 - Safety feet protection (shoes, boots, over shoes)
+  - 1576 - Specialist hand tools - pending classification
+  - 1577 - Mixers glue, paint and concrete
+  - 1578 - Build Renew LMF corner
+  - 1579 - Power tools - pending classification
+  - 1581 - Bench saw for wood
+  - 1582 - Machines for metal working
+  - 1583 - Machines for wood working
+  - 1584 - Site heating and dehumidifiers
+  - 1585 - WORKSHOP OR CONSTRUCTION SITE MACHINES AND EQUIPEMENT - pending classification
+  - 1586 - Consumables and accessories - pending classification
+  - 1587 - Textile or leather tools storage
+  - 1588 - Metal storage boxes
+  - 1589 - Rolling cabinets
+  - 1590 - Tool and fixing storage - pending classification
+  - 1592 - Carpet on command
+  - 1593 - Carpet - pending classification
+  - 1594 - Pvc planks & tiles to glue
+  - 1595 - PVC flooring in rolls, plain semi or plain colours
+  - 1596 - PVC flooring in rolls, parquet and wood pattern
+  - 1597 - PVC flooring in rolls, tiled pattern
+  - 1598 - PVC flooring in rolls, other patterns
+  - 1599 - PVC flooring rolls - pending classification
+  - 1600 - Decorative rugs - pending classification
+  - "1601 - Outdoor mats: scrapers, coconut matting, metal, rubber"
+  - 1602 - Functional rugs - pending classification
+  - 1603 - flooring finishing - pending classification
+  - 1604 - Wall tile white
+  - 1605 - Wall tile plain colour
+  - 1606 - Wall tile concrete aspect
+  - 1608 - Wall tile wood aspect
+  - 1609 - Wall tile marble aspect
+  - 1610 - Wall tile stone aspect
+  - 1611 - Wall tile - pending classification
+  - 1612 - Wall, decoration and fresco
+  - 1613 - Floor ceramic decorative elements
+  - "1614 - Tiling: border tiles and tiling trims - pending classification"
+  - 1615 - Floor tiles white
+  - 1616 - Floor tiles plain colour
+  - 1617 - Floor tiles concrete aspect
+  - 1619 - Floor tiles metal or copper aspect
+  - 1620 - Floor tiles wood aspect
+  - 1621 - Floor tiles marble aspect
+  - 1622 - Floor tiles terracotta aspect
+  - 1623 - Floor tile natural and reconstituted marble
+  - 1624 - Floor tiles stone aspect
+  - 1626 - Floor cement tiles aspect
+  - 1627 - Glazed and unglazed floor tiles - pending classification
+  - 1628 - Metal ou copper mosaics
+  - 1629 - Wood mosaics
+  - 1631 - Natural stone mosaics
+  - 1632 - Glass mosaics
+  - 1634 - Mixed material mosaics
+  - 1635 - Glass paste mosaics
+  - 1636 - Ceramic mosaics
+  - 1640 - Pebbles
+  - 1645 - Mosaics, pebbles - pending classification
+  - 1646 - Plaster cladding
+  - 1647 - Cement cladding
+  - 1648 - Natural stone cladding
+  - 1649 - Cladding in other materials
+  - 1650 - Panels in polystyrene or other materials
+  - 1651 - Claddings - pending classification
+  - 1652 - Tiles levellers
+  - 1653 - Additives, plasticizers, cleaners and waterproof products
+  - 1654 - Tiling, laying and finishing products - pending classification
+  - 1657 - Tiling toolkit
+  - 1660 - Basins in other materials
+  - 1661 - Washbasins, bidets, bowls - pending classification
+  - 1662 - Suspended WC (including pck with frame)
+  - 1663 - Urinals
+  - 1664 - Other wc
+  - 1665 - Accessories
+  - 1666 - Toilet bowls, cisterns, wc - pending classification
+  - 1667 - Cast iron bathtub
+  - 1668 - Spas
+  - 1669 - Bathtubs - pending classification
+  - 1670 - Synthetic resin shower trays (polymarble, solid surface etc)
+  - 1671 - Shower trays, ready for tiling
+  - 1672 - Panels and accessories for ready to tile (other than trays)
+  - 1674 - Glass pivot doors for shower enclosures
+  - 1675 - Glass saloon doors for shower enclosures
+  - 1676 - Glass folding doors for shower enclosures
+  - 1677 - 1/4 circle shower enclosures
+  - 1678 - Square corner for shower enclosures
+  - 1679 - Rectangular corner for shower enclosures
+  - 1680 - Walk in shower enclosures
+  - 1681 - Custom-made shower
+  - 1682 - Complete non-hydromassage cabins
+  - 1683 - SHOWER ENCLOSURES & SHOWER TRAYS - pending classification
+  - 1684 - Washing toilet seats (japanese)
+  - 1685 - Accessories for toilet seats
+  - 1686 - Shower and bath accessories
+  - 1687 - Sauna accessories
+  - 1688 - Anti-slip bathmats (inside shower)
+  - 1689 - Small storage units for the bathroom
+  - 1690 - Bathroom and wc accessories and carpets - pending classification
+  - 1692 - Wall mounted basins
+  - 1693 - Bathroom furniture non assembled non modular (all materials)
+  - 1698 - BATHROOM MODULAR FURNITURE FLAT PACK (REMIX)
+  - 1699 - HANDWASHING FURNITURE PACKS
+  - 1703 - BATHROOM STORAGE & LAUNDRY FURNITURE ASSEMBLED
+  - 1705 - BATHROOM MODULAR FURNITURE ASSEMBLED (NEO)
+  - 1708 - Toilet/WC furniture cabinet
+  - 1709 - BATHROOM STORAGE & LAUNDRY FURNITURE FLAT PACK
+  - 1710 - Bathroom furniture, mirrors and Bathroom cabinets
+  - 1714 - Specific basin low basin (electronique, temporised, handicapped, handshower cold water)
+  - 1715 - Bathroom plumbing fitments and spare parts - pending classification
+  - 1716 - Kitchen cartridge mixers + spray head faucets
+  - 1717 - Specific kitchen faucets
+  - 1718 - SP - kitchen faucets
+  - 1719 - Kitchen plumbing fitments - pending classification
+  - "1720 - Shower railset: bar+hose+handshower"
+  - 1723 - Shower column without faucet
+  - 1724 - Shower column with mixer faucet
+  - 1728 - Shower panels with hydromassage
+  - 1730 - KIT Built in shower column with mixer or thermo faucet
+  - 1731 - Hydrotherapy - pending classification
+  - 1732 - Water supply pipes in PE (polyethylene)
+  - 1733 - Water supply pipes in armoured polyethylene
+  - 1735 - Water supply pipes multi-layer
+  - 1736 - Water supply pipes iron
+  - "1737 - Supply Connections: biconical, instantaneous and automatical"
+  - 1738 - Plumbing waterproofing, renovation and cleaning
+  - 1739 - Insulating sleeve
+  - 1740 - Water, gas and oil supply fixings - pending classification
+  - 1741 - Plug seals
+  - 1742 - Inspection trapdoor and frontal panel
+  - 1743 - PVC fixing
+  - 1744 - WATER EVACUATION / DRAINAGE - pending classification
+  - 1745 - Filtration appliances
+  - 1746 - Filtration accessories and consumables
+  - 1747 - Water treatment - pending classification
+  - 1748 - Water heater thermodynamic
+  - 1749 - Water heater - pending classification
+  - 1750 - Boiler electric
+  - 1751 - Boilers and accessories - pending classification
+  - 1753 - Radiators and accessories - pending classification
+  - 1754 - Bio-ethanol fuel
+  - 1755 - FUEL MOBILE HEATING - pending classification
+  - 1756 - Flexible ventilation pipe for evacuation
+  - 1757 - Conduit Fittings and Gaskets
+  - 1758 - Rigid ventilation pipe for evacuation
+  - 1759 - Heat recovery for evacuation system
+  - 1760 - Conduit cleaning (mechanical and chemical)
+  - 1761 - Air and smoke conducts products and accessories- pending classification
+  - 1762 - Seeds and bulbs - pending classification
+  - 1763 - Cactus and bonsai
+  - 1765 - Miscellaneous plants - pending classification
+  - 1766 - Heavy-duty garden tools (pick, shovel, fork etc)
+  - 1767 - Ground preparation tools (hoe, cultivator etc)
+  - 1768 - Ground and lawn maintenance tools (broom grass, rake, scythe etc)
+  - 1769 - Gardenning Modular tools
+  - 1770 - Gardenning Hand tools
+  - 1771 - Gardenning tools handles
+  - 1772 - Wood cutting tools ( axes, lumberjack saws etc)
+  - 1773 - Branch and hedge cutting tools (pruners, loppers, shears etc)
+  - 1775 - Waste and composting bags
+  - 1776 - Garden tool and accessories storage
+  - 1777 - Land tools and maintenance - pending classification
+  - 1778 - Bio and organic products
+  - 1779 - Spraying
+  - 1780 - Crop fertilizers and treatment - pending classification
+  - 1781 - Thermometers, barometers and other control devices
+  - 1782 - Crop and plant protection - pending classification
+  - 1784 - Plastic containers (horticultural and decorative use)
+  - 1785 - Terracotta and enalmeled terracotta pots
+  - 1786 - Metal and zinc containers
+  - 1787 - Wood and natural fibre containers
+  - 1788 - Containers in other materials
+  - 1789 - Container bases and supports
+  - 1790 - Glass containers and vases
+  - 1791 - Artificial and dried flowers
+  - 1792 - Lanterns and torches
+  - 1793 - Garden candles
+  - 1795 - Garden containers and decoration - pending classification
+  - 1796 - Evacuation pumps
+  - 1797 - Presure tank and feed pumps
+  - 1798 - Pump accessories and connections
+  - 1799 - Garden taps
+  - 1800 - Automatic connections
+  - 1801 - Fluted connections, collars and joints
+  - 1802 - Hose reels
+  - 1803 - Hose reels equipped
+  - 1804 - Sprinklers
+  - 1805 - Buried sprinkler system
+  - 1807 - Nebulizers
+  - 1808 - Water tanks less than 500 L
+  - 1809 - Cans, jerricans and buckets
+  - 1810 - Irrigation - pending classification
+  - 1811 - Hand lawnmowers
+  - 1812 - Electric lawnmowers
+  - 1813 - Petrol lawnmowers
+  - 1814 - Tractors, accessories and equipment (rolls, sweepers….)
+  - 1815 - Battery lawnmowers
+  - 1816 - Scarifiers and accessories
+  - 1817 - Battery garden tools (not mowers)
+  - 1818 - Motorized garden equipment - pending classification
+  - 1819 - High pressure gasoline and hot water cleaners
+  - 1820 - High pressure cleaners - pending classification
+  - 1821 - Pillars and walls
+  - 1822 - Welded panels
+  - 1823 - Metal, aluminium and iron panels and fences
+  - 1824 - wood and composite panels and fences
+  - 1825 - Concrete panels and fences
+  - 1826 - Natural screening
+  - 1827 - Plastic screening
+  - 1828 - Outdoor delimitation - pending classification
+  - 1829 - Delineation of the terrace, baluster, trellises and railings
+  - 1831 - Composite slabs and planks
+  - 1834 - Natural stones
+  - 1835 - Outdoor floring - pending classification
+  - 1837 - Decorative fountains and wells
+  - 1838 - Trellis, trellage and plant supports
+  - 1840 - Decorative shingles and gravels
+  - 1841 - Japanese steps and paving slabs
+  - 1842 - Ornamental garden items, columns, statue, etc
+  - 1843 - Landscaping - pending classification
+  - 1844 - Wooden garden shed
+  - 1845 - Metal garden shed
+  - 1846 - Resin and plastic shed
+  - 1847 - Garages and carports
+  - 1849 - Garden storage and garden bins
+  - 1850 - Garden kennels
+  - 1851 - Garden shelters and storage - pending classification
+  - 1852 - Braided resin dinning set (tables, chairs, armchairs, benches)
+  - 1853 - Wood and composite dinning set (tables, chairs, armchairs, benches)
+  - 1854 - Metal, aluminium and mixed materials dinning set (tables, chairs, armchairs, benches)
+  - 1855 - Marble, stone and mosaic dinning set (tables, chairs, armchairs, benches)
+  - 1856 - Sun lunger
+  - 1857 - Armchairs, deckchairs and sunbeds
+  - 1858 - Swings and hammocks
+  - 1859 - Gazebos, pergolas
+  - 1860 - Children''s games
+  - 1861 - Children''s furniture
+  - 1862 - Garden furniture and children's games - pending classification
+  - 1863 - Barbecues - pending classification
+  - 1864 - Inflatable pools (not fixed pools)
+  - 1865 - Surface swimming pools with metallic or tubular frame
+  - 1866 - Surface swiming pools made of wood
+  - 1867 - Standard and tailored in-ground swimming pools
+  - 1868 - Swimming pool and spa accessories and equipment
+  - 1869 - Swimming pool and spa pumps and filtration units
+  - 1870 - Swimming pools - pending classification
+  - 1871 - Artificial Christmas trees
+  - 1873 - Cribs
+  - 1874 - Christmas and halloween house and table decorations
+  - 1875 - Cuddly toys and dolls
+  - 1876 - Villages and automata
+  - 1877 - Papers, sprays and costumes
+  - 1878 - Electric garlands and christmas decoration for indoor
+  - 1879 - Electric garlands and christmas decoration for outdoor
+  - 1881 - Christmas decorations - pending classification
+  - 1882 - Dog products
+  - 1883 - Cat products
+  - 1884 - Fish products
+  - 1885 - Bird products
+  - 1886 - Products for other animals
+  - 1888 - Pet products - pending classification
+  - 1889 - Secure goods and people - pending classification
+  - 1890 - To create something - pending classification
+  - 1893 - Rosace door handles
+  - 1896 - To repair and equip a door or a window - pending classification
+  - 1897 - Home trolley
+  - 1899 - To repair and equip a furniture - pending classification
+  - 1900 - Chemical wall plugs
+  - 1901 - Bulk nails, screws, bolts
+  - 1902 - Bulk wall plugs
+  - 1903 - Stainless steel screws
+  - 1904 - Screw box
+  - 1905 - Plugs box
+  - 1906 - To fix and fit together - pending classification
+  - 1907 - Equipment - pending classification
+  - 1908 - Solvent-based satin paints (excluding base )
+  - 1909 - Solvent-based matt paints (excluding base )
+  - 1910 - Water-based satin paints (excluding base)
+  - 1911 - Water-based matt paints (excluding base)
+  - 1913 - Radiator paints
+  - 1915 - Finishing paints - pending classification
+  - 1916 - Satin white wall and ceiling paints (excluding base)
+  - 1918 - Matt coloured wall paints (excluding base)
+  - 1919 - Satin coloured wall paints (excluding base)
+  - 1921 - Coloured kitchen and bathroom wall paints
+  - 1922 - Special wall and ceiling paints (excluding base)
+  - 1923 - White paints - pending classification
+  - 1924 - Façades and roof paints - pending classification
+  - 1926 - Decking protection products
+  - 1927 - Products for exterior furniture end objects - pending classification
+  - 1928 - Wall effect paints - bases for tinting machine
+  - 1929 - Special paints for metal, wood and floors- bases for tinting machine
+  - 1930 - Colorants for tinting machine
+  - 1931 - Tinting machine - pending classification
+  - 1932 - Fungicide treatments
+  - 1933 - Anti-rust treatments
+  - 1934 - Special substrate preparation
+  - 1935 - Preparation - pending classification
+  - 1936 - Dust sheets, carton sheets and accessories for paint works protection
+  - 1937 - Overall and painter protection accessories
+  - 1938 - Painting tools and accessories - pending classification
+  - 1939 - Expanding polyurethane foams
+  - 1940 - Small insulation products for wall
+  - 1941 - Home maintenance - pending classification
+  - 1942 - Repairing pastes and resins
+  - 1943 - Adhesive mastics
+  - 1944 - Glues and sealants - pending classification
+  - 1945 - Wood pastes and putties, wood repair products
+  - 1946 - Wood and furniture paint effects
+  - 1947 - Moisture absorbers and refills
+  - 1948 - Maintain tools - pending classification
+  - 1949 - Adhesive wall stickers and decorations
+  - 1950 - Wallpaper and soft wall coverings - pending classification
+  - 1951 - Other finished textile products (not cushions)
+  - 1952 - Textile - pending classification
+  - 1953 - Curtain poles, rails and cables - pending classification
+  - 1954 - Wood Venetian blinds, not including accessories
+  - 1955 - PVC Venetian blinds, not including accessories
+  - 1956 - Bamboo and other natural material blinds
+  - 1957 - Blinds to order
+  - 1958 - Interior blinds and door curtains - pending classification
+  - 1959 - Shopping and photo holder
+  - 1960 - Cork and white boards, multi-frames and display cases
+  - 1961 - Framing - pending classification
+  - 1962 - Ceiling decoration - pending classification
+  - 1963 - Adhesives in rolls and oilclothes - pending classification
+  - 1964 - Decorative adhesives - pending classification
+  - 1965 - LED bulbs
+  - 1966 - LED tube
+  - 1967 - Other bulbs and tubes- iodine, plants, healthy …
+  - 1968 - Bulbs - pending classification
+  - 1970 - Lighting chandeliers ans suspensions - pending classification
+  - 1971 - Ceiling fans - pending classification
+  - 1972 - Wall and ceiling lights - pending classification
+  - 1973 - Flexled multiusage
+  - "1977 - Technical and industrial lighting : office, garage, cellar, construciton site …"
+  - 1978 - Small mobile lighting with battery or USB
+  - 1979 - LIGHTING APPLIANCE BY PURPOSE - pending classification
+  - 1980 - Decorative string light
+  - 1982 - Tables lamps, lampshades - pending classification
+  - 1983 - Floor lamps - pending classification
+  - 1984 - Interior spotlights with led bulb except composable
+  - 1985 - Interior spotlights with fluo compact bulb except composable
+  - 1986 - Interior spotlights without bulb and accessories
+  - 1987 - FIXED SPOTLIGHTS - pending classification
+  - 1988 - Led recessed spotlights
+  - 1989 - Fluo compact recessed spotlights
+  - 1990 - Recessed downlights
+  - 1991 - Recessed spotlights without bulb
+  - 1992 - Accessories for recessed spotlights
+  - 1993 - Recessed spotlights - pending classification
+  - 1994 - Outdoor lighting - pending classification
+  - 1995 - Solar powered beacons
+  - 1996 - Solar powered table lightings
+  - 1997 - Solar powered wall lights and projectors
+  - 1998 - Solar powered posts
+  - 1999 - High solar powered posts
+  - 2000 - Solar powered lighting accessories
+  - 2001 - Solar powered lighting - pending classification
+  - 2002 - Sliding wardrobe doors on measure
+  - 2003 - Wardrobe doors - pending classification
+  - 2004 - WARDROBE AND LIVING ROOM STORAGE ARTICLES - pending classification
+  - 2005 - FLAT PACK AND MOUNTED FURNITURE - pending classification
+  - 2007 - Hangers and hangers accessories
+  - 2008 - Protective covers and vacuum bags
+  - 2010 - UTILITY PLASTIC AND WOOD CONTAINERS - pending classification
+  - 2011 - Utility shelves in metal and wood
+  - 2012 - Utility shelves and cabinets - pending classification
+  - 2013 - Individual boards - pending classification
+  - 2014 - Metal wall shelves
+  - 2015 - Wall shelves, other materials
+  - 2016 - Decorative wall shelves - pending classification
+  - 2017 - UTILITY STORAGE BRACKETS - pending classification
+  - 2018 - Kitchen cabinets to order
+  - 2019 - Kitchen furnture and other items - pending classification
+  - 2021 - Worktops in other materials (mineral, resine,... )
+  - 2022 - Wood worktops
+  - 2025 - Accessories for worktop and bartops (edge, feet, snack accessories)
+  - 2026 - Worktops and splashbacks - pending classification
+  - 2027 - Kitchen sinks and washtubs - pending classification
+  - 2029 - Kitchen appliances - pending classification
+  - 2030 - Bars and accessories for splashbacks
+  - 2031 - Interior dustbins, except bathroom
+  - 2032 - Kitchen fittings and accessories - pending classifiaction
+  - 2033 - Delivery service
+  - 2034 - DIY courses
+  - 2035 - Customer card
+  - 2036 - Services - pending classification
+  - 2037 - SP - electric heating systems
+  - 2038 - SP - alarms, security, home automation, multimedia
+  - 2039 - SP - domestic appliances
+  - 2042 - Car cleaning products
+  - 2043 - Car accessories and spare parts
+  - 2045 - Car lubricants, glass-cleaner and additives
+  - 2046 - Parts and accessories for 2 wheels vehicles
+  - 2047 - Car accessories and maintenance - pending classification
+  - 2048 - Gardening and landscaping library
+  - 2049 - Decoration and hobbycraft library
+  - 2050 - Cooking library
+  - 2051 - Specialist library - pending classification
+  - 2052 - Paints for fine arts
+  - 2053 - Paper and cards
+  - 2054 - Hobbycraft activity materials
+  - 2055 - Hobbycraft - pending classification
+  - 2056 - Table and office linen
+  - 2057 - Bathroom linen
+  - 2058 - Bed linen
+  - 2059 - Bed equipment
+  - 2060 - Covers for sofas, armchairs and side chairs
+  - 2061 - Domestic linen - pending classification
+  - 2062 - Crockery
+  - 2063 - Glasses
+  - 2064 - Cutlery
+  - 2066 - Disposable tableware
+  - 2068 - table and kitchen ustensils
+  - 2069 - Cooking utensils and saucepans
+  - 2070 - Small electrical appliances
+  - 2071 - table arts and Culinary items - pending classification
+  - 2072 - Candlestick and indoor candles
+  - 2073 - Air fresheners
+  - 2074 - Miscellaneous decorative objects
+  - 2075 - FURNITURE AND INTERIOR DECORATIVE OBJECTS - pending classification
+  - 2076 - Hygiene
+  - 2077 - Grocery
+  - 2078 - Laundry
+  - 2079 - Miscellaneous products - pending classification
+  - "2080 - Other products: 48 codes, unallocated and miscellaneous"
+  - 2081 - Adhesive tape, hose clamp, heat shrink sleeve and other cable accessories
+  - 2083 - Xxxremote control systems
+  - 2084 - Domotic box
+  - 2085 - TNT decoder
+  - 2086 - Brackets for antenna
+  - 2088 - Wind energy production
+  - 2089 - Wall tile other materials
+  - 2090 - Floor tiles other materials
+  - 2091 - Tile fixing without glue
+  - 2092 - Joints, sealing and expansion
+  - 2093 - Aerators
+  - 2094 - Collectors and manifolds
+  - 2095 - Frame connectors
+  - 2096 - Roller shutters accessories
+  - 2099 - Glass fixed panels for shower enclosures
+  - 2101 - Drilling pumps
+  - 2103 - Geotextile mesh
+  - 2104 - Accessories for garden doors and gates
+  - 2105 - Gaz Barbecues
+  - 2106 - Electric barbecues
+  - 2107 - Outdoor clothes line
+  - 2108 - Measurment and quotation services
+  - 2109 - At home technical diagnosis
+  - 2110 - Services to craftmen
+  - 2111 - Shopping bags
+  - 2112 - Children care service
+  - 2113 - Product recycling
+  - 2114 - Services by subscription
+  - 2115 - Financial and insurance services
+  - 2116 - Vehicle rental
+  - 2117 - Room rental
+  - 2118 - Frame making
+  - 2119 - Carpet making
+  - 2120 - Wood panel cutting and wood veneer
+  - 2121 - Class pane cutting
+  - 2122 - Other materials cutting
+  - 2123 - Keys making
+  - 2124 - Doors hardware fitting
+  - 2125 - Digital printing
+  - 2126 - Services related to products - pending classification
+  - 2127 - Heating pump
+  - 2128 - Water supply pipes - other materials
+  - 2129 - Gardening tarpaulins
+  - 2132 - Camping furniture and accessories
+  - 2133 - Construction timber
+  - 2134 - Cladding and accessories
+  - 2135 - Roofing and covering accessories
+  - 2137 - Insecticides
+  - 2138 - Under-roof protective film
+  - 2139 - Films and membranes for waterproofing
+  - 2140 - Electrical switches and sockets - pending classification
+  - 2141 - Sockets and rachets
+  - 2142 - Electronic pipes, cables and metal detectors
+  - 2143 - Accessories and glue for glue guns
+  - 2144 - Sds concrete drill bits and sets
+  - 2145 - Sds max concrete drill bits
+  - 2146 - Selfstanding mirrors for bathroom
+  - 2151 - Panels and fences laying accessories
+  - 2152 - Charcoal, pellet and BBQ lighters
+  - 2153 - Planchas
+  - 2154 - Decorative hooks
+  - 2155 - Plasterboard plugs
+  - 2156 - Garbage bags
+  - 2157 - Household buckets and basins
+  - 2158 - Recessed solar powered lighting
+  - 2159 - Food preservation
+  - 2160 - Tarpaulins and construction site protection
+  - "2164 - COMPLEMENTARY PRODUCTS (HOUSE, GARDEN AND DIY): 48 CODES, UNALLOCATED AND MISCELLANEOUS"
+  - 2165 - ottoman and beanbag chairs
+  - 2167 - Drain and drain hoses
+  - 2168 - Sandwich pannels all uses
+  - 2169 - Composable lighting chandeliers and pendants
+  - 2170 - Led integrated lighting chandeliers and pendants
+  - 2171 - Plastic and rubber outdoor slabs and planks
+  - 2172 - Tripod for wooden cutting
+  - 2173 - Renovation paints and resins for kitchen and bathroom
+  - 2174 - Accessories for ceiling fans
+  - 2175 - Seed and fertilize distributor
+  - 2176 - Composable wall ligh
+  - 2177 - Vegetal garden tables
+  - 2178 - Seats and other furniture (except kitchen and garden)
+  - 2179 - Tables
+  - 2180 - Vertical garden
+  - 2182 - Shower solution to replace the bathtub
+  - 2183 - Composable ceiling light
+  - 2186 - Led integrated wall light
+  - 2187 - Led integated ceiling light
+  - 2188 - Shower and brush
+  - 2189 - SP - wall and ceiling light
+  - 2190 - Bathroom lighting appliances
+  - 2191 - Lighting for picture board
+  - 2192 - Signaling and security lighting appliances, nightlight
+  - 2193 - Outdoor toilet
+  - 2194 - SP - bathroom and wc accessories
+  - 2195 - Led panel multiusage
+  - 2197 - Event lighting except xmas
+  - 2199 - SP - Destination lighting devices
+  - 2200 - SP - table lamp, lampshade
+  - 2201 - Floor lamp base
+  - 2202 - SP - Floor lamps
+  - 2203 - Composable interior spotlights
+  - 2204 - Led integrated interior spotlights
+  - 2205 - SP - interior spotlights
+  - 2206 - Garden composable lighting system
+  - 2208 - SP - outdoor lighting
+  - 2209 - WORKTOP
+  - 2210 - Outdoor lighting decorative object
+  - 2211 - SP - solar lights
+  - 2212 - LIGHTING FOR MIRRORS AND CABINETS
+  - 2213 - WC Handshower
+  - 2214 - Flat roofs trafficable or not
+  - 2215 - Wire netting for stones
+  - 2216 - Timer
+  - 2217 - Aluminium windows,french windows and accessories
+  - 2218 - Wood windows ,french windows and accessories
+  - 2219 - Hybrid windows,french windows and accessories
+  - 2220 - Polyurethane insulation
+  - 2221 - Aluminium entry doors and accessories
+  - 2222 - Wood entry doors and accessories
+  - 2223 - Exterior floor paints (excluding base)
+  - 2224 - Exterior multi-surface paints (excluding bases)
+  - 2226 - Waterproofing and humidity interior treaments
+  - 2231 - Decorative partitions and accessories
+  - 2234 - Storage dressers
+  - 2235 - Square furniture
+  - 2236 - Storage trunks
+  - 2239 - Boxes and baskets other materials
+  - 2240 - Moving items - pending classification
+  - 2241 - Moving boxes
+  - 2242 - Moving protection
+  - 2243 - Other moving accessories
+  - 2246 - Window handles.
+  - "2247 - Kitchen : 48 codes, unallocated and miscellaneous"
+  - 2248 - Boxes and baskets for box cabinets and modular program
+  - 2249 - Building barriers, safety barriers
+  - 2250 - Fixation without nails or screws
+  - 2251 - Concrete floor
+  - 2252 - Garage protection
+  - 2253 - Metal reinforcement
+  - 2255 - Pvc planks & tiles looselay
+  - 2256 - Steel entry door and accessories
+  - 2257 - Armored doors, security doors, technical doors
+  - 2258 - Window sill
+  - 2259 - Antislip mats
+  - 2260 - Cooking hobs
+  - 2261 - Other electrical appliances
+  - 2262 - Kitchen doors to order
+  - 2263 - Wall tile other aspects
+  - 2267 - Surface pumps
+  - 2268 - Water source
+  - 2269 - Fecal water pumps
+  - 2270 - Robots
+  - 2271 - Worktops on measure
+  - 2272 - Petrol grass trimmers
+  - 2273 - Battery grass trimmers
+  - 2274 - Petrol brush cutters
+  - 2275 - Battery brush cutters
+  - 2276 - Petrol hedge trimmers and pole hedge trimmers
+  - 2277 - Battery hedge trimmers and pole hedge trimmers
+  - 2278 - Petrol chain saw
+  - 2279 - Outdoor tiles
+  - 2280 - Technical and professional porcelain tiles
+  - 2281 - Porcelain polished tiles
+  - 2282 - Battery chain saw
+  - 2283 - Accessories and expendables for motorized equipment (tillers, shredders….)
+  - 2284 - Artificial grass accessories
+  - 2285 - Sun sails
+  - 2286 - Terrace heating
+  - 2288 - WC EQUIPMENT - pending classification
+  - 2289 - ELECTRICAL EQUIPMENT - pending classification
+  - 2290 - SECURITY AND ACCES CONTROL - pending classification
+  - 2291 - WORKER PROTECTION - pending classification
+  - 2292 - PVC flooring planks and tiles - pending classification
+  - 2293 - Flooring preparation - pending classification
+  - 2294 - laminate flooring - pending classification
+  - 2295 - Aerothermal , geothermal and heating pumps - pending classification
+  - 2296 - MODULAR STORAGE SOLUTIONS FOR LIVING ROOM - pending classification
+  - 2297 - Air treatment - pending classification
+  - 2298 - Temperature regulation - pending classification
+  - 2299 - Connected lighting - pending classification
+  - 2300 - Coloured and effects paints - pending classification
+  - 2301 - Lighting kids - pending classification
+  - 2302 - Maintain products - pending classification
+  - 2303 - Floor paints and products - pending classification
+  - 2304 - Sprays - pending classification
+  - 2305 - Fruits -vegetables - olives collect
+  - 2306 - Incinerators
+  - 2307 - After sales service and spare parts for garden tools
+  - 2308 - SP - CONSTRUCTION EQUIPMENT
+  - 2309 - Tiling mortar glue
+  - 2310 - Fruit and vegetables conservation
+  - 2311 - TILING POWDER JOINTS
+  - 2312 - Oenology
+  - 2313 - Fixing and accessories for lumber
+  - 2314 - SP - crop and plants protection
+  - 2315 - Pre fabricated elements of concrete
+  - 2316 - Stone and reconstituted stone containers
+  - 2317 - vegetated roofing
+  - 2318 - Asphalt roofing in board
+  - 2319 - Concrete containers
+  - 2320 - Ceiling panels
+  - 2321 - Expandible hoses
+  - 2322 - Watering guns and lances
+  - 2323 - Steel windows , french windows and accessories
+  - 2324 - Wall hose reels
+  - 2325 - SP- Windows, doors, outdoor blinds and shutters
+  - 2326 - SP - irrigation
+  - 2327 - Solid Wood sliding door
+  - 2328 - SP - INTERIOR DOORS AND SEPARATORS
+  - 2329 - Technical hoses for pumps
+  - 2330 - Interior panels Door, door block, door-frame in steel
+  - 2331 - Sliding system for door
+  - 2332 - SP - STAIRCASES, MEZZANINES, BALUSTERS
+  - 2333 - SP - pumps
+  - 2334 - Modular functions ( timer, contactor, …)
+  - 2335 - flexible sheating integrated wires
+  - 2336 - Shrub shears
+  - 2337 - Pole saw
+  - "2338 - Water and gas supply connections : crimped"
+  - 2339 - Petrol tillers and cultivators
+  - "2340 - Water and gas supply connections : compression"
+  - 2341 - Battery tillers and cultivators
+  - 2342 - SP - water treatment
+  - 2343 - Thermic blowers and vacuum cleanners
+  - 2344 - SP - Energy
+  - 2345 - RENEWABLE ENERGY
+  - 2346 - Battery blowers and vacuum cleanners
+  - 2347 - SP - Security and access control
+  - 2348 - Stappler cordless and pneumatic
+  - 2349 - Motorized collect
+  - 2350 - Batteries and chargers
+  - 2351 - Blades for lawnmowers
+  - 2352 - Spool, nylon lines and blades for brushcutters and trimmers
+  - 2353 - Miniature power tools cordless
+  - 2354 - Biscuit jointer
+  - 2355 - Chaines and bars for chainsaws
+  - 2356 - SP - site powel tools
+  - 2357 - Grinders and wall chaser cordless
+  - 2358 - Battery and chargers for battery garden motorized equipment
+  - 2359 - Screwdrivers corded
+  - 2360 - Jigsaw cordless
+  - 2361 - SP - garden electrical equipment
+  - 2362 - Circular saws cordless
+  - 2363 - SP - garden petrol equipment
+  - 2364 - Perforators cordless
+  - 2365 - SP - garden battery equipment
+  - 2366 - Earthmoving machines (floors elicopters, compactors, concrete slab cutter)
+  - 2367 - Working radio
+  - 2368 - 3D Printer
+  - 2369 - PVC panels and fences
+  - 2370 - SP - Workshop machines and equipment
+  - 2371 - Blades for electric planes
+  - 2372 - SP - outdoor delimitation
+  - 2373 - Multifunction tools accesories
+  - 2374 - Occultation accessories
+  - 2375 - Minature tools accesories (Dremel type)
+  - 2377 - Occultation - pending classification
+  - 2378 - Antifall arrest
+  - 2379 - Workplace protection and cleaning (tarpaulin, fire extinguisher and waste bags)
+  - 2380 - SP - occultation
+  - 2384 - Decking accessories
+  - 2385 - PVC flooring in rolls, Children patterns
+  - 2386 - SP - decking
+  - 2387 - PVC flooring in rolls, concrete patterns
+  - 2388 - PVC flooring in rolls, marble and stone patterns
+  - 2389 - SP - Landscapping
+  - 2390 - 1st price laminate
+  - 2391 - Medio laminate
+  - 2392 - Sheds and garden storage accessories
+  - 2393 - Forte laminate
+  - 2394 - SP - garden sheds
+  - 2395 - Other laminate
+  - 2396 - Injected resin coffee set (tables, chairs, armchairs, benches)
+  - 2397 - Wall tile textile aspect
+  - 2398 - Wall tile metal or copper aspect
+  - 2399 - Wall tile cement tiles aspect
+  - 2400 - Wall tile authentic cement tiles
+  - 2401 - Floor tiles textile aspect
+  - 2402 - Floor tiles authentic cement tiles
+  - 2403 - Floor tiles other aspects
+  - 2404 - Marble mosaics
+  - 2405 - Porcelain cladding
+  - 2406 - Braided resin coffee set (tables, chairs, armchairs, benches)
+  - 2407 - Wood cladding
+  - 2408 - Cladding finishing accessories
+  - 2409 - Wood and composite coffee set (tables, chairs, armchairs, benches)
+  - 2410 - wall basins
+  - 2411 - Feet and accessories
+  - 2412 - SP - Washbasins, basins
+  - 2413 - Metal, aluminium and mixed materials coffee set (tables, chairs, armchairs, benches)
+  - 2414 - built-in washbasins
+  - 2415 - SP - SHOWER ENCLOSURES & SHOWER TRAYS
+  - "2416 - Shower enclosure : safety & multiple occupancy buildings"
+  - 2417 - Stone shower trays
+  - 2418 - Other materials shower trays
+  - 2419 - Marble, stone and mosaic coffee set (tables, chairs, armchairs, benches)
+  - 2420 - Shower wall panels
+  - 2421 - Wooden bathmats -footboard-
+  - 2422 - SP - outdoor furniture
+  - 2423 - Selfstanding WC
+  - 2424 - Sun umbrella bases and weather protection accessories
+  - 2425 - SP - weather protection
+  - 2426 - Weather protection - pending classification
+  - "2427 - Bathroom furniture hardware: feet, handles,…"
+  - 2428 - Pellet barbecues
+  - 2429 - Faucet for bathtub
+  - 2430 - Thermostatic faucet for bathtub
+  - 2431 - Smoker
+  - 2432 - Brasero
+  - 2433 - SP - barbecues
+  - 2434 - Spa
+  - 2435 - Swimming pool robots
+  - 2436 - Swimming pool and spas cleaning and maintenance accessories
+  - 2437 - SP - for swimming pools and spas
+  - 2438 - Natural Christmas trees
+  - 2439 - SP - Christmas decoration
+  - 2440 - Selfstanding faucet for bathtub
+  - 2441 - Shower faucet
+  - 2442 - Thermostatic shower faucet
+  - 2443 - SP - Secure goods and people
+  - 2445 - Bidet faucet
+  - 2446 - Built in bath faucet
+  - 2447 - Water-based velvet paints (excluding base)
+  - 2448 - Built in basin faucet
+  - 2449 - Mini rollers for paint, refills and handles
+  - 2450 - SP - HYDROTHERAPY
+  - 2451 - Fixed Electrical Stoves and Fireplaces
+  - 2452 - Set and Kit of paint tools
+  - 2453 - Cheminey stack
+  - 2454 - Exterior wood varnishes
+  - 2455 - Solar thermal pannels
+  - 2456 - Batteries and elements for thermal energies
+  - 2457 - Accessories for tinting machine
+  - 2458 - Products and aerothermal solutions
+  - 2459 - Products and geothermal solutions
+  - 2460 - Repairing glues
+  - 2461 - Heating pumps Air-Water
+  - 2462 - Heating pumps Air-Air (not splits)
+  - 2463 - Velvet white wall and ceiling paints (excluding base)
+  - 2464 - Accessories for aerothermal, geothermal and heating pumps
+  - 2465 - White kitchen & bathroom wall and ceiling paints
+  - 2466 - Ventilation and exhaust grids
+  - 2467 - Non connected thermostats
+  - 2468 - Electrical heating floor thermostat
+  - 2469 - Ready mixed filler
+  - 2470 - Filler accessories
+  - 2471 - Decorativ bulbs
+  - 2472 - SP - Ceiling fans
+  - 2473 - Clipping spotlights
+  - 2474 - Velvet coloured wall paints (excluding base)
+  - 2475 - Led integrated recessed spotlights
+  - 2476 - SP - recessed spotlights
+  - 2477 - Preparation sprays
+  - 2478 - Stripled for outdoor
+  - 2479 - Outdoor nomadic lighting
+  - 2480 - Special spray
+  - 2481 - Solar medium post lights
+  - 2482 - Solar nomadic lighting
+  - 2483 - Sovent-based spray paints
+  - 2484 - bulbs
+  - 2485 - technical lighting
+  - 2486 - Technical curtains (Dim out, phonic, insulating)
+  - 2487 - deco lighting
+  - 2488 - Throw
+  - 2489 - outdoor lighting
+  - 2490 - SP - Connected ligting
+  - 2491 - Cafe curtains
+  - 2492 - Kids desk and table lamp
+  - 2493 - Kids wall, pendants, ceiling lamps
+  - 2494 - Kids nomadic lamps
+  - 2495 - SP - Lighting kids
+  - 2496 - SP - blinds
+  - 2497 - Furniture doors and drawers
+  - 2498 - Night and Day blinds
+  - 2499 - Quincaillerie d'ameublement pour solutions modulaires
+  - 2500 - Metal and Metal-wood modular storage solutions for living room
+  - 2501 - cabinet hardware (hinges, lift, feet,…)
+  - 2502 - SP - kitchen accessories and interior fittings
+  - 2503 - CLOCKS
+  - 2506 - Lighted mirror cabinet
+  - 2507 - BATHROOM FURNITURE FLAT PACK WITH BASIN

@@ -1,0 +1,9 @@
+name: Deploy the ACL
+
+on:
+  workflow_run:
+    workflows: [Release]
+    types:
+      - completed
+
+jobs:

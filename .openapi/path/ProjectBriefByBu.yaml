@@ -1,0 +1,66 @@
+get:
+  tags:
+    - Brief
+  summary: Returns the brief of a project for a given project code and BU code.
+  parameters:
+    - $ref: "../parameter/path/ProjectCode.yaml"
+    - $ref: "../parameter/header/buCode.yaml"
+    - $ref: "../parameter/header/correlationId.yaml"
+    - $ref: "../parameter/query/offsetParam.yaml"
+    - $ref: "../parameter/query/limitParam.yml"
+  responses:
+    "200":
+      description: Successful operation (all objects are returned)
+      headers:
+        X-Rate-Limit-Limit: 
+          $ref: "../schema/header/xRateLimitLimit.yaml"
+        X-Rate-Limit-Remaining:
+          $ref: "../schema/header/xRateLimitRemaining.yaml"
+        X-Rate-Limit-Reset:
+          $ref: "../schema/header/xRateLimitReset.yaml"
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              payload:
+                $ref: "../schema/BriefBuProductDevelopment.yaml"
+    "400":
+      description: Bad request
+      headers:
+        X-Rate-Limit-Limit: 
+          $ref: "../schema/header/xRateLimitLimit.yaml"
+        X-Rate-Limit-Remaining:
+          $ref: "../schema/header/xRateLimitRemaining.yaml"
+        X-Rate-Limit-Reset:
+          $ref: "../schema/header/xRateLimitReset.yaml"
+      content:
+        application/json:
+          schema:
+            $ref: "../schema/errors/400.yaml"
+    "404":
+      description: Bad request
+      headers:
+        X-Rate-Limit-Limit: 
+          $ref: "../schema/header/xRateLimitLimit.yaml"
+        X-Rate-Limit-Remaining:
+          $ref: "../schema/header/xRateLimitRemaining.yaml"
+        X-Rate-Limit-Reset:
+          $ref: "../schema/header/xRateLimitReset.yaml"
+      content:
+        application/json:
+          schema:
+            $ref: "../schema/errors/404.yaml"
+    "429":
+      description: Too Many Request
+      headers:
+        X-Rate-Limit-Limit: 
+          $ref: "../schema/header/xRateLimitLimit.yaml"
+        X-Rate-Limit-Remaining:
+          $ref: "../schema/header/xRateLimitRemaining.yaml"
+        X-Rate-Limit-Reset:
+          $ref: "../schema/header/xRateLimitReset.yaml"
+      content:
+        application/json:
+          schema:
+            $ref: "../schema/errors/419.yaml"

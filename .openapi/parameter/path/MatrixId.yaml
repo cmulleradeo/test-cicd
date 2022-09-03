@@ -1,0 +1,7 @@
+name: MatrixId
+in: path
+description: MatrixId of a product
+required: true
+schema:
+  type: string
+  example: 2019R05P12-YY

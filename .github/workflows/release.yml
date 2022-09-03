@@ -1,0 +1,181 @@
+name: Release
+
+on:
+  workflow_dispatch
+
+env:
+  NODE_VERSION: 14
+  VAULT_ADDR: https://vault.factory.adeo.cloud
+  VAULT_NAMESPACE: /adeo/metric
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-20.04
+    if: github.event.pull_request.merged == true
+    outputs:
+      newVersionCommitHash: ${{ steps.commitHashStepId.outputs.sha }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Import secrets from Vault Openshift
+        uses: hashicorp/vault-action@v2.3.1
+        with:
+          url: ${{ env.VAULT_ADDR }}
+          namespace: ${{ env.VAULT_NAMESPACE }}
+          method: approle
+          roleId: ${{ secrets.VAULT_ROLE_ID }}
+          secretId: ${{ secrets.VAULT_SECRET_ID }}
+          secrets: |
+            secret/data/acl/continuous_integration NPM_AUTH;
+            secret/data/acl/continuous_integration NPM_REGISTRY;
+            secret/data/acl/continuous_integration SVC_METRIC_GITHUB_TOKEN;
+
+      - name: Generating .npmrc
+        run: |
+          npm config set @metric:registry=https:${{ env.NPM_REGISTRY }}
+          npm config set ${{ env.NPM_REGISTRY }}:_authToken=${{ env.NPM_AUTH }}
+
+      - name: Git config
+        uses: oleksiyrudenko/gha-git-credentials@v2-latest
+        with:
+          name: svc-metric-acl
+          email: metricteam@adeo.com
+          token: ${{ env.SVC_METRIC_GITHUB_TOKEN }}
+
+      - name: Install dependencies
+        run: |
+          npm ci
+          npx lerna bootstrap
+
+      - name: Get current version
+        run: |
+          PACKAGE_VERSION=$(cat lerna.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[",]//g' | tr -d '[[:space:]]')
+          echo "CURRENT_VERSION=$PACKAGE_VERSION" >> $GITHUB_ENV
+
+      - name: Bump prerelease version
+        if: contains(github.ref, 'develop')
+        run: npx lerna version --no-commit-hooks --yes --conventional-prerelease=*
+
+      - name: Bump release version with conventional graduate
+        if: contains(github.ref, 'main') && contains(env.CURRENT_VERSION, 'alpha')
+        run: npx lerna version --no-commit-hooks --yes --conventional-graduate=*
+
+      - name: Bump release version without conventional graduate
+        if: "contains(github.ref, 'main') && !contains(env.CURRENT_VERSION, 'alpha')"
+        run: npx lerna version --no-commit-hooks --yes
+
+      - name: Build packages
+        run: npx lerna run --parallel --stream build
+
+      - name: Get new version commit hash
+        id: commitHashStepId
+        run: |
+          commitHash=$(git rev-parse HEAD)
+          echo "::set-output name=sha::$commitHash"
+
+      - name: Publish npm packages
+        continue-on-error: true
+        run: npx lerna publish from-git --yes --registry 'https:${{ env.NPM_REGISTRY }}'
+
+      - name: Cache the build folders
+        uses: actions/cache@v2
+        with:
+          path: |
+            packages/**/dist
+          key: ${{ runner.os }}-build-${{ github.sha }}-${{ github.run_id }}
+
+  docker-publish:
+    name: Build and publish the docker images
+    runs-on: ubuntu-20.04
+    needs: [release]
+    strategy:
+      matrix:
+        package: [
+          acl-api,
+          generic-rabbitmq-to-kafka,
+          product-development/init,
+          product-development/update,
+          project-product-development/init,
+          project-product-development/update,
+          brief-product-development/init,
+          brief-product-development/update,
+          business-conditions/update,
+          milestone/init,
+          milestone/update,
+          business-event,
+          product-dev-event
+        ]
+    steps:
+      - run: echo ${{ needs.release.outputs.newVersionCommitHash }}
+
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ needs.release.outputs.newVersionCommitHash }}
+
+      - name: Setup Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Cache the build folders
+        uses: actions/cache@v2
+        with:
+          path: |
+            packages/**/dist
+          key: ${{ runner.os }}-build-${{ github.sha }}-${{ github.run_id }}
+
+      - name: Import secrets from Vault Openshift
+        uses: hashicorp/vault-action@v2.3.1
+        with:
+          url: ${{ env.VAULT_ADDR }}
+          namespace: ${{ env.VAULT_NAMESPACE }}
+          method: approle
+          roleId: ${{ secrets.VAULT_ROLE_ID }}
+          secretId: ${{ secrets.VAULT_SECRET_ID }}
+          secrets: |
+            secret/data/acl/continuous_integration JFROG_DOCKER_REGISTRY_HP;
+            secret/data/acl/continuous_integration JFROG_DOCKER_REGISTRY_PROD;
+            secret/data/acl/continuous_integration JFROG_WRITER_SA_PASSWORD;
+            secret/data/acl/continuous_integration JFROG_WRITER_SA_USERNAME;
+            secret/data/acl/continuous_integration NPM_AUTH;
+            secret/data/acl/continuous_integration NPM_REGISTRY;
+
+      - name: Generating .npmrc
+        env:
+          PACKAGE_PATH: packages/${{ matrix.package }}
+        run: |
+          echo "@metric:registry=https:${{ env.NPM_REGISTRY }}" >> .npmrc
+          echo "${{ env.NPM_REGISTRY }}:_authToken=${{ env.NPM_AUTH }}" >> .npmrc
+          cp .npmrc ${{ env.PACKAGE_PATH }}
+
+      - name: Copy the Dockerfile and entrypoint.sh
+        env:
+          PACKAGE_PATH: packages/${{ matrix.package }}
+        run: |
+          cp .docker/Dockerfile ${{ env.PACKAGE_PATH }}/Dockerfile
+          if [ ${{ matrix.package }} = "acl-api" ]
+          then
+            cp .docker/Api.entrypoint.sh ${{ env.PACKAGE_PATH }}/entrypoint.sh
+          else
+            cp .docker/Instance.entrypoint.sh ${{ env.PACKAGE_PATH }}/entrypoint.sh
+          fi
+
+      - name: Build prerelease Docker images
+        if: contains(github.ref, 'develop')
+        env:
+          PACKAGE_PATH: packages/${{ matrix.package }}
+        run: sh .github/docker-build.sh ${{ env.JFROG_DOCKER_REGISTRY_HP }}
+
+      - name: Build release Docker images
+        if: contains(github.ref, 'main')
+        env:
+          PACKAGE_PATH: packages/${{ matrix.package }}
+        run: sh .github/docker-build.sh ${{ env.JFROG_DOCKER_REGISTRY_PROD }}

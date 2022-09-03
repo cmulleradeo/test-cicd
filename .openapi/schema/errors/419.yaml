@@ -1,0 +1,11 @@
+type: object
+properties:
+  message:
+    type: string
+    example: "Too many request"
+  code:
+    type: integer
+    example: 429
+  type:
+    type: string
+    example: "TOO_MANY_REQUEST"

@@ -1,0 +1,10 @@
+type: object
+description: A technical product in developement represented by a Matrix_id can be linked to several Adeo-key which ones may be linked to several GTIN. On the other hand, an Adeo Key or a GTIN can be linked to only one Matrix_id. During the Serial Life of a product, we can operate - Minor improvement that doesn't justify changes of Matrix_id, nor Adeo Key or GTIN. - Major improvement that justify changes of Matrix_id. Adeo Key and GTIN will change too.
+properties:
+  BusinessHistorical:
+    $ref: "./BusinessHistorical.yaml"
+  BusinessForecast:
+    $ref: "./BusinessForecast.yaml"
+  BusinessCommitment:
+    $ref: "./BusinessCommitment.yaml"
+  

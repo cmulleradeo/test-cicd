@@ -1,0 +1,46 @@
+openapi: 3.0.1
+info:
+  title: Metric ACL API
+  description: API whose purpose is to deliver Business terms imported by the Metric ACL.
+  version: 1.0.0
+servers:
+  - url: https://api.adeo.com/API/v1
+security:
+  - OAuth2:
+      - readOnly
+    apiKey: []
+paths:
+  /projects/ttm/{TTM}:
+    $ref: "./path/ProjectsByTtm.yaml"
+  /projects/{ProjectCode}:
+    $ref: "./path/ProjectByCode.yaml"
+  /projects/{ProjectCode}/brief:
+    $ref: "./path/ProjectBrief.yaml"
+  /projects/{ProjectCode}/brief/bu/{buCode}:
+    $ref: "./path/ProjectBriefByBu.yaml"
+  /projects/{ProjectCode}/milestones:
+    $ref: "./path/MilestoneByProjectCode.yaml"
+  /products/{MatrixId}:
+    $ref: "./path/ProductByMatrixId.yaml"
+  /products/{MatrixId}/bu/{buCode}:
+    $ref: "./path/ProductByCodeAndBu.yaml"
+components:
+  securitySchemes:
+    OAuth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          scopes:
+            readOnly: read objects in your account
+          authorizationUrl: https://api.adeo.com/oauth-server/introspect
+          tokenUrl: https://api.adeo.com/oauth-server/oauth/token
+    apiKey:
+      type: apiKey
+      name: x-gateway-apikey
+      in: header
+  parameters:
+    $ref: "./parameter/index.yaml"
+  headers:
+    $ref: "./schema/header/index.yaml"
+  schemas:
+    $ref: "./schema/index.yaml"

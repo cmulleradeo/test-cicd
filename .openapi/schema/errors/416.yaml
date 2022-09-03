@@ -1,0 +1,11 @@
+type: object
+properties:
+  message:
+    type: string
+    example: "Range not satisfiable: offset out of bound"
+  code:
+    type: integer
+    example: 416
+  type:
+    type: string
+    example: "RANGE_NOT_SATISFIABLE"

@@ -1,0 +1,27 @@
+{
+  "name": "@metric/update-brief-product-development",
+  "version": "2.3.0",
+  "description": "",
+  "main": "dist/index.js",
+  "private": true,
+  "directories": {
+    "dist": "dist"
+  },
+  "scripts": {
+    "dev": "npx babel-node -r ../../../node_modules/dotenv/config ./src/index.js --config-file ../../../babel.config.js",
+    "lint": "eslint ./src/**/*.js",
+    "start": "node ./dist/index.js",
+    "build": "npm run clean && npx babel src --out-dir dist --copy-files --config-file ../../../babel.config.js",
+    "clean": "npx rimraf --no-glob ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "jestSonar": {
+    "reportPath": ".reports/",
+    "reportFile": "jest_sonar_report.xml"
+  },
+  "dependencies": {
+    "@metric/acl-common-modules": "^2.3.0",
+    "@metric/acl-core": "^2.3.0"
+  }
+}

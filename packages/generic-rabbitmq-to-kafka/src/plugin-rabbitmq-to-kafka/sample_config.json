@@ -1,0 +1,17 @@
+[
+	{
+		"name": "PLUGIN_NAME",
+		"type": "string",
+		"required": true
+	},
+	{
+		"name": "PLUGIN_VERSION",
+		"type": "string",
+		"required": true
+	},
+	{
+		"name": "STREAM",
+		"type": "string",
+		"required": true
+	}
+]

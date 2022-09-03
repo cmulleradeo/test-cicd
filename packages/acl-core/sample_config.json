@@ -1,0 +1,195 @@
+[
+  {
+    "name": "LOG_LEVEL",
+    "type": "string",
+    "required": true,
+    "default": "info"
+  },
+  {
+    "name": "GOOGLE_APPLICATION_CREDENTIALS",
+    "type": "string",
+    "required": true
+  },
+  {
+    "name": "BU_SHORT_NAME",
+    "type": "string",
+    "required": true
+  },
+  {
+    "name": "ACL_TYPE",
+    "type": "string",
+    "required": true,
+    "default": "METRIC"
+  },
+  {
+    "name": "PROJECT_TANGRAM",
+    "type": "string",
+    "required": true
+  },
+  {
+    "name": "PROJECT_TANGRAM_ID",
+    "type": "string",
+    "required": true
+  },
+  {
+    "name": "NODE_ENV",
+    "type": "string",
+    "required": true
+  },
+  {
+    "name": "DB_TYPE",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "DB_USER",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "DB_PWD",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "DB_HOST",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "DB_PORT",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "DB_NAME",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "KAFKA_HOST",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "KAFKA_REGISTRY",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "KAFKA_SSL",
+    "type": "boolean",
+    "required": false
+  },
+  {
+    "name": "KAFKA_SASL_MECHANISM",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "KAFKA_SASL_USERNAME",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "KAFKA_SASL_PASSWORD",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "KAFKA_SESSION_TIMEOUT",
+    "type": "number",
+    "required": true,
+    "default": 30000
+  },
+  {
+    "name": "KAFKA_MAX_ASYNC_REQUESTS",
+    "type": "number",
+    "required": false,
+    "default": 10
+  },
+  {
+    "name": "KAFKA_CONNECT_TIMEOUT",
+    "type": "number",
+    "required": false,
+    "default": 5000
+  },
+  {
+    "name": "KAFKA_REQUEST_TIMEOUT",
+    "type": "number",
+    "required": false,
+    "default": 10000
+  },
+  {
+    "name": "KAFKA_CONNECT_RETRIES",
+    "type": "number",
+    "required": false,
+    "default": 3
+  },
+  {
+    "name": "RABBITMQ_HOSTNAME",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "RABBITMQ_USER",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "RABBITMQ_PASSWORD",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "RABBITMQ_PORT",
+    "type": "number",
+    "required": false
+  },
+  {
+    "name": "RABBITMQ_VHOST",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "RABBITMQ_PROTOCOL",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "RABBITMQ_SUBSCRIPTIONS_RETRY_MIN",
+    "type": "number",
+    "required": false,
+    "default": 2000
+  },
+  {
+    "name": "RABBITMQ_SUBSCRIPTIONS_RETRY_MAX",
+    "type": "number",
+    "required": false,
+    "default": 6000
+  },
+  {
+    "name": "RABBITMQ_RETRY_MIN",
+    "type": "number",
+    "required": false,
+    "default": 1000
+  },
+  {
+    "name": "RABBITMQ_RETRY_MAX",
+    "type": "number",
+    "required": false,
+    "default": 5000
+  },
+  {
+    "name": "RABBITMQ_PREFETCH",
+    "type": "number",
+    "required": false,
+    "default": 10
+  },
+  {
+    "name": "RABBITMQ_REDELIVERIES_LIMIT",
+    "type": "number",
+    "required": false,
+    "default": 10
+  }
+]

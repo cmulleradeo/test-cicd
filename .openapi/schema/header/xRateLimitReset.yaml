@@ -1,0 +1,4 @@
+description: The number of seconds before the quota will be reset
+schema:
+  type: integer
+  format: int32

@@ -1,0 +1,7 @@
+name: ProjectCode
+in: path
+description: Identifier of a Project Product Development
+required: true
+schema:
+  type: string
+  example: 2021R01P01

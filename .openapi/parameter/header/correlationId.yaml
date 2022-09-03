@@ -1,0 +1,6 @@
+in: header
+name: x-correlation-id
+schema:
+  type: string
+  format: uuid
+required: false

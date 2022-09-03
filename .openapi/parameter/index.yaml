@@ -1,0 +1,14 @@
+buCode:
+  $ref: "./header/buCode.yaml"
+correlationId:
+  $ref: "./header/correlationId.yaml"
+offsetParam:
+  $ref: "./query/offsetParam.yaml"
+limitParam:
+  $ref: "./query/limitParam.yml"
+ProjectCode:
+  $ref: "./path/ProjectCode.yaml"
+MatrixId:
+  $ref: "./path/MatrixId.yaml"
+TTM:
+  $ref: "./path/TTM.yaml"

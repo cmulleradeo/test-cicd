@@ -1,0 +1,49 @@
+{
+  "name": "@metric/acl-api",
+  "version": "2.3.0",
+  "description": "API for the Metric ACL",
+  "main": "dist/index.js",
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "node ./server.min.js",
+    "dev": "run-s _clean:dev && run-p \"_watch:dev {@}\" _copy:swagger:dev _launch:dev:wait --",
+    "build": "run-s _clean:dist \"_build:dist {@}\" _copy:dist _copy:swagger:dist --",
+    "clean": "run-p _clean:dist _clean:dev _clean:reports",
+    "_clean:dist": "rimraf --no-glob ./dist/",
+    "_clean:dev": "rimraf --no-glob ./.dev/",
+    "_clean:reports": "rimraf --no-glob ./.reports/",
+    "_build:dev": "webpack --mode development",
+    "_build:dist": "webpack --mode production",
+    "_watch:dev": "run-s \"_build:dev --watch {@}\" --",
+    "_launch:dev:wait": "just-wait -p ./.dev/server.min.js && run-s _launch:dev",
+    "_launch:dev": "nodemon --watch ./.dev/server.min.js --watch ./.env --watch ./.env.local --exec \"npx dotenv -e .env.local -e .env cross-env-shell -- \"node --inspect=9229\"\" ./.dev/server.min.js",
+    "_copy:dist": "cp-cli \"package.json\" \"dist/package.json\" && cp-cli \"package-lock.json\" \"dist/package-lock.json\"",
+    "_copy:swagger:dist": "cp-cli \"../../docs/swagger.json\" \"dist/swagger.json\"",
+    "_copy:swagger:dev": "cp-cli \"../../docs/swagger.json\" \".dev/swagger.json\""
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.16.0",
+    "@metric/acl-common-modules": "^2.3.0",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.0.0",
+    "core-js": "^3.6.5",
+    "dd-trace": "^2.7.1",
+    "express": "^4.17.1",
+    "express-winston": "^4.2.0",
+    "helmet": "^3.22.0",
+    "lodash": "^4.17.19",
+    "map-keys-deep": "0.0.2",
+    "omit-deep-lodash": "^1.1.4",
+    "pg": "^8.7.1",
+    "regenerator-runtime": "^0.13.5",
+    "sequelize": "^6.14.1",
+    "source-map": "^0.7.3",
+    "source-map-support": "^0.5.19",
+    "winston": "^3.2.1",
+    "winston-transport": "^4.3.0"
+  }
+}

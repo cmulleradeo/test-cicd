@@ -1,0 +1,16 @@
+type: string
+enum:
+  - PR Go for Project
+  - PR Go for Build
+  - PR Go for Design&Conception
+  - PR Go for Purchasing
+  - PR Go for Industrialisation
+  - PR Go for Mass Prod
+  - PR Go for Inhabitant
+  - SL Go for Analysis
+  - SL Go for Development
+  - SLGo for Purchasing
+  - SL Go for Industrialisation
+  - SL Go for Mass Production
+  - SL Go Ending
+  - SL Go for Inhabitant

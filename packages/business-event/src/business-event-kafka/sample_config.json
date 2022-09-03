@@ -1,0 +1,58 @@
+[
+  {
+    "name" : "PLUGIN_NAME",
+    "type" : "string",
+    "required" : true
+  },
+  {
+    "name" : "PLUGIN_VERSION",
+    "type" : "string",
+    "required" : true
+  },
+  {
+    "name" : "STREAM",
+    "type" : "string",
+    "required" : true
+  },
+  {
+    "name" : "ACL_NAME",
+    "type" : "string",
+    "required" : true
+  },
+  {
+    "name" : "CODE_BU",
+    "type" : "string",
+    "required" : true
+  },
+  {
+    "name" : "SQL_USE_SSL",
+    "type" : "boolean",
+    "required" : true,
+    "default": true
+  },
+  {
+    "name" : "CONSUMER_GROUP_ID",
+    "type" : "string",
+    "required" : true
+  },
+  {
+    "name" : "CONSUMER_TOPIC",
+    "type" : "string",
+    "required" : true
+  },
+  {
+    "name" : "CONSUMER_NB_WORKER",
+    "type" : "number",
+    "required" : true
+  },
+  {
+    "name" : "PRODUCER_TOPIC",
+    "type" : "string",
+    "required" : true
+  },
+  {
+    "name" : "KAFKA_KEYS_TO_PROCESS",
+    "type" : "array",
+    "required" : true
+  }
+]

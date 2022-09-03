@@ -1,0 +1,83 @@
+type: object
+description: A Project of product development is defined by the merging of several products of an entire range, or of a part of a range, for which S.M.A.R.T. objectives of improveness have been written and shared through a brief.
+properties:
+  ttm:
+    description: TTM Product Development
+    type: string
+    example: 2020
+    pattern: '^[0-9]{4}$'
+  code:
+    description: Project Code
+    type: string
+    pattern: ^[0-9]{4}[0-9]{2}(P|S)[0-9]{2}$
+  name:
+    description: Project name
+    type: string
+  type:
+    description: Project Type
+    type: string
+    enum: [Project, Serial Life - Range Continuous Improvement, Serial Life - Product Continuous Improvement, Serial Life - Sourcing change]
+  initialCode:
+    description: Project Initial Code
+    type: string
+    pattern: ^[0-9]{4}[0-9]{2}(P|S)[0-9]{2}$
+    nullable: true
+  market:
+    description: Market
+    type: string
+    enum: [
+      Projects Markets,
+      Construction Flooring & Garden Markets,
+      Technical Markets,
+      Decorative Markets
+    ]
+  department:
+    description: Department
+    type: string
+    enum: [
+      01 - CONSTRUCTION MATERIALS,
+      02 - WOOD,
+      03 - ELECTRICITY - PLUMBING,
+      04 - TOOLS,
+      05 - WOODEN FLOORS - CARPETS - FLOORING,
+      06 - TILING,
+      07 - BATHROOM,
+      08 - COMFORT,
+      09 - GARDEN,
+      10 - HARDWARE,
+      11 - PAINT - HOUSEHOLD PRODUCT,
+      12 - DECORATION,
+      13 - LIGHTING,
+      14 - STORAGE,
+      17 - KITCHEN
+    ]
+  scope:
+    description: Project Scope
+    type: string
+    enum: [
+      International Project (inc. TOP 1000),
+      International Project (not inc. TOP 1000),
+      Top1000 Standalone,
+      Specific Mono BU
+    ]
+  qualification:
+    description: Project Qualification
+    type: string
+    enum: [
+      Commercial Action,
+      Continuous Improvment,
+      Range Creation,
+      Range Actualisation,
+      Seasonal,
+      Supplier change
+    ]
+  lifetime:
+    description: Project Lifetime
+    type: number
+    format: double
+  products:
+    description: List of product matrix id belonging to the project
+    type: array
+    items:
+      type: string
+      example: 1/4R_33

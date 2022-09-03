@@ -1,0 +1,6 @@
+xRateLimitLimit:
+  $ref: "./xRateLimitLimit.yaml"
+xRateLimitRemaining:
+  $ref: "./xRateLimitRemaining.yaml"
+xRateLimitReset:
+  $ref: "./xRateLimitReset.yaml"

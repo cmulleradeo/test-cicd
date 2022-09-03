@@ -1,0 +1,39 @@
+type: string
+enum:
+  - Other
+  - Pre-Brief
+  - Brief
+  - Quality
+  - Matrix
+  - Communication Brief
+  - Communication and Manual Specifications
+  - Data Preanalysis Sheet (SL)
+  - Data Preanalysis Sheet (SL Go Ending)
+  - Design & Trends Specifications
+  - Engineering Change Request (SL)
+  - Functional Specification
+  - Kick-Off Buying Offices
+  - Kick-Off Project Minutes
+  - Logistic Requirements
+  - Macro-Planning
+  - Micro-Planning
+  - Packing Specifications
+  - Pre-Study
+  - Previous Project Retex
+  - Product Drawings
+  - Quality Benchmark Report
+  - Quality Requirements
+  - Risk Analysis
+  - Supplier Contract Tooling (SL)
+  - Supplier Evaluations
+  - Supply-Chain Specifications
+  - Technical Specification
+  - Tender Follow-up
+  - Import Document
+  - Range Matrix
+  - Inhabitant Input report (concept / design)
+  - Uses report
+  - Club Testeur report (final product)
+  - Inhabitant Usage test report (silver sample validation)
+  - Inhabitant Usage test report (prototype validation)
+  - Inhabitant Media test report (360 media pack validation)

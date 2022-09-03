@@ -1,0 +1,124 @@
+type: object
+description: the future purchasing actions of BU or Partners by evaluating past revenue and behavior over the previous months or year
+properties:
+  buId:
+    description: BU ID
+    type: string
+    enum: [
+      01. LM France,                 
+      02. Weldom Integres,                         
+      03. Weldom Services,                 
+      04. LM Spain,                 
+      05. Aki Spain,                 
+      06. LM Italy,                 
+      07. Bricocenter,        
+      08. LM Russia,         
+      09. LM Poland,         
+      10. LM Brazil,         
+      11. LM Portugal,       
+      12. Aki Portugal,      
+      13. LM Greece / Cyprus,        
+      14. LM South Africa,         
+      15. LM Ukraine,        
+      16. LM Romania,         
+      17. Bricoman Fr,        
+      18. Bricoman Pol,         
+      19. Bricoman It,         
+      20. Bricomart,         
+      22. Zodio Brazil,                         
+      23. Zodio France,                 
+      24. Zodio Italy,                         
+      25. Alice Delice                
+    ]
+  secondaryType:
+    description: Secondary Type
+    type: string
+  comment:
+    description: Comment from BU
+    type: string
+  expected3xNetBuyPriceStore:
+    description: 3x net buying price stores Expected BU
+    type: number
+  expectedBusinessWarrantyPersio:
+    description: Business BU warranty period months
+    type: integer
+  expectedMerchandising:
+    description: Expected merchandising
+    type: string
+    enum: [
+      Basket,
+      Cut Case,
+      Hook,
+      Pallet,
+      Shelf
+      ]
+  expectedMoq:
+    description: MOQ Expected for Full Year Forecast
+    type: number
+  expectedRangeLetter:
+    description: Range Letter Expected BU
+    type: string
+    enum: [
+      A,
+      B,
+      C,
+      L,
+      P,
+      Ac,
+      Bc,
+      D,
+      E,
+      ET,
+      F,
+      H,
+      K,
+      M,
+      "N",
+      Q,
+      R,
+      S,
+      T,
+      U,
+      X,
+      Z
+      ]
+  expectedSellPriceForCustomer:
+    description: Selling price BU expected for the customers
+    type: number
+  freezeForecast:
+    description: Freeze Forecast
+    type: boolean
+  expectedDeveliveryPromiseOnline:
+    description: Sales channel and delivery promise online Expected BU
+    type: string
+    enum: [
+      Web 24h,
+      Web 48h,
+      Web 5 days,
+      Web > 7 days
+      ]
+  expectedDeveliveryPromisePhysical:
+    description: Sales channel and delivery promise physical Expected BU
+    type: string
+    enum: [
+      Displayed on store stock LS Immediat,
+      Displayed on store stock EM Immediat,
+      Displayed on store customer order 24h,
+      Displayed on store customer order 48h,
+      Displayed on store customer order 5 days,
+      Displayed on store customer order > 7 days,
+      Not displayed on store customer order 24h,
+      Not displayed on store customer order 48h,
+      Not displayed on store customer order 5 days,
+      Not displayed on store customer order > 7 days
+      ]
+  expectedImplementationDate:
+    description: Expected Inhabitant Availability Date
+    type: string
+    format: date-time
+  expectedAnnualSelloutForecastQtity:
+    description: Annual sellout Forecast BU quantities
+    type: number
+  expectedForcastedSellingTO:
+    description: Turnover expected Forecast BU
+    type: number

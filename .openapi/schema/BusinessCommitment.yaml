@@ -1,0 +1,56 @@
+type: object
+description: Engagements taken over the conception of product to cover the identified business needs
+properties:
+  buId:
+    description: BU ID
+    type: string
+    enum: [
+      01. LM France,                 
+      02. Weldom Integres,                         
+      03. Weldom Services,                 
+      04. LM Spain,                 
+      05. Aki Spain,                 
+      06. LM Italy,                 
+      07. Bricocenter,        
+      08. LM Russia,         
+      09. LM Poland,         
+      10. LM Brazil,         
+      11. LM Portugal,       
+      12. Aki Portugal,      
+      13. LM Greece / Cyprus,        
+      14. LM South Africa,         
+      15. LM Ukraine,        
+      16. LM Romania,         
+      17. Bricoman Fr,        
+      18. Bricoman Pol,         
+      19. Bricoman It,         
+      20. Bricomart,         
+      22. Zodio Brazil,                         
+      23. Zodio France,                 
+      24. Zodio Italy,                         
+      25. Alice Delice 
+      ]
+  secondaryType:
+    description: Secondary Type
+    type: string
+  finalNbSampleRequest:
+    description: Samples for BU collection Nb requested
+    type: integer
+  finalNbSampleRequestShowRoom:
+    description: Samples for BU showroom Nb requested
+    type: integer
+  freezeCommitment:
+    description: Freeze Commitment
+    type: boolean
+  gtinFinal:
+    description: GTIN validated
+    type: string
+  finalComitmentSellingTo:
+    description: Turnover Commitment BU
+    type: number
+  expectedAnnualSelloutComitment:
+    description: Annual sellout Commitment BU quantities
+    type: number
+  expectedFirstImplementationQtity:
+    description: First Implementation BU quantities
+    type: number

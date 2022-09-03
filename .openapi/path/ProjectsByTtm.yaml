@@ -1,0 +1,92 @@
+get:
+  tags:
+    - Projects
+  summary: Returns a list of project codes for a given time to market year.
+  parameters:
+    - $ref: "../parameter/path/TTM.yaml"
+    - $ref: "../parameter/header/buCode.yaml"
+    - $ref: "../parameter/header/correlationId.yaml"
+    - $ref: "../parameter/query/offsetParam.yaml"
+    - $ref: "../parameter/query/limitParam.yml"
+  responses:
+    "200":
+      description: Successful operation (all objects are returned)
+      headers:
+        X-Rate-Limit-Limit: 
+          $ref: "../schema/header/xRateLimitLimit.yaml"
+        X-Rate-Limit-Remaining:
+          $ref: "../schema/header/xRateLimitRemaining.yaml"
+        X-Rate-Limit-Reset:
+          $ref: "../schema/header/xRateLimitReset.yaml"
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              metadata:
+                $ref: "../schema/PaginationMetadata.yaml"
+              payload:
+                type: array
+                items:
+                  type: string
+                  example: 2021R01P01
+    "206":
+      description: Successful operation (partial content)
+      headers:
+        X-Rate-Limit-Limit: 
+          $ref: "../schema/header/xRateLimitLimit.yaml"
+        X-Rate-Limit-Remaining:
+          $ref: "../schema/header/xRateLimitRemaining.yaml"
+        X-Rate-Limit-Reset:
+          $ref: "../schema/header/xRateLimitReset.yaml"
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              metadata:
+                $ref: "../schema/PaginationMetadata.yaml"
+              payload:
+                type: array
+                items:
+                  type: string
+                  example: 2021R01P01
+    "400":
+      description: Bad request
+      headers:
+        X-Rate-Limit-Limit: 
+          $ref: "../schema/header/xRateLimitLimit.yaml"
+        X-Rate-Limit-Remaining:
+          $ref: "../schema/header/xRateLimitRemaining.yaml"
+        X-Rate-Limit-Reset:
+          $ref: "../schema/header/xRateLimitReset.yaml"
+      content:
+        application/json:
+          schema:
+            $ref: "../schema/errors/400.yaml"
+    "416":
+      description: Range not satisfiable (offset out of bound)
+      headers:
+        X-Rate-Limit-Limit: 
+          $ref: "../schema/header/xRateLimitLimit.yaml"
+        X-Rate-Limit-Remaining:
+          $ref: "../schema/header/xRateLimitRemaining.yaml"
+        X-Rate-Limit-Reset:
+          $ref: "../schema/header/xRateLimitReset.yaml"
+      content:
+        application/json:
+          schema:
+            $ref: "../schema/errors/416.yaml"
+    "429":
+      description: Too Many Request
+      headers:
+        X-Rate-Limit-Limit: 
+          $ref: "../schema/header/xRateLimitLimit.yaml"
+        X-Rate-Limit-Remaining:
+          $ref: "../schema/header/xRateLimitRemaining.yaml"
+        X-Rate-Limit-Reset:
+          $ref: "../schema/header/xRateLimitReset.yaml"
+      content:
+        application/json:
+          schema:
+            $ref: "../schema/errors/419.yaml"

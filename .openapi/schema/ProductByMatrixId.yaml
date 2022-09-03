@@ -1,0 +1,451 @@
+type: object
+description: A technical product in developement represented by a Matrix_id can be linked to several Adeo-key which ones may be linked to several GTIN. On the other hand, an Adeo Key or a GTIN can be linked to only one Matrix_id. During the Serial Life of a product, we can operate - Minor improvement that doesn't justify changes of Matrix_id, nor Adeo Key or GTIN. - Major improvement that justify changes of Matrix_id. Adeo Key and GTIN will change too.
+properties:
+  matrixId:
+    description: MatrixId
+    type: string
+    example: '2019R05P12-YY'
+  revision:
+    description: Revision
+    type: integer
+  shortDesignation:
+    description: Designation Short
+    type: string
+  family:
+    description: Family Designation
+    $ref: './enum/Family.yaml'
+  subDepartement:
+    description: Sub Departement
+    $ref: './enum/SubDepartement.yaml'
+  brandType:
+    description: Brand Type
+    type: string
+    enum: [
+      MDH,
+      National Brand,
+      No Name
+    ]
+  valueLevel:
+    description: Value Level
+    type: string
+    enum: [
+      Level 1,
+      Level 2,
+      Level 3
+    ]
+  internationalRange:
+    description: International Range
+    type: string
+    enum: [
+      i1,
+      i2,
+      i3,
+      i4
+    ]
+  developmentMode:
+    description: Development Mode
+    type: string
+    enum: [
+      Co-Development,
+      Conception,
+      Selection
+    ]
+  productStatus:
+    description: Product Status
+    type: string
+    enum: [
+      Cancelled,
+      Confirmed,
+      Deleted
+    ]
+  amountOfContent:
+    description: Amount Of Content
+    type: string
+  unitOfContent:
+    description: Unit Of Content
+    type: string
+    enum: [
+      Gram,
+      Kilogram,
+      Litre,
+      Square Metre,
+      Cubic Metre,
+      Metre,
+      Linear Meter,
+      Pallet,
+      Piece
+    ]
+  modelAttributes:
+    description: model attributes
+    type: array
+    items:
+      type: object
+      properties:
+        key:
+          type: string
+        value:
+          type: string
+  department:
+    description: Department
+    type: string
+    enum: [
+      01 - CONSTRUCTION MATERIALS,
+      02 - WOOD,
+      03 - ELECTRICITY - PLUMBING,
+      04 - TOOLS,
+      05 - WOODEN FLOORS - CARPETS - FLOORING,
+      06 - TILING,
+      07 - BATHROOM,
+      08 - COMFORT,
+      09 - GARDEN,
+      10 - HARDWARE,
+      11 - PAINT - HOUSEHOLD PRODUCT,
+      12 - DECORATION,
+      13 - LIGHTING,
+      14 - STORAGE,
+      17 - KITCHEN
+    ]
+  firstPrice:
+    description: First Price
+    type: string
+    enum: [
+      "No",
+      "Yes"
+    ]
+  lineNumber:
+    description: Line Number
+    type: integer
+  matrixCode:
+    description: Matrix Code
+    type: string
+  newProduct:
+    description: New Product
+    type: boolean
+  parentGroupId:
+    description: Parent Group Id
+    type: integer
+  posterOnly:
+    description: Poster Only
+    type: boolean
+  longDesignation:
+    description: Designation Long
+    type: string
+  productType:
+    description: Product Type
+    type: string
+  projectInitialCode:
+    description: Project Initial Code
+    type: string
+  projectType:
+    description: Project Type
+    type: string
+    enum: [
+      Project        Build,                
+      Serial Life – Range Continuous Improvement        Champ d'action 2,                
+      Serial Life – Product Continuous Improvement        Champ d'action 3,                
+      Serial Life – Sourcing change        Champ d'action 5
+    ]
+  segmentName:
+    description: Segment For Poster Name
+    type: string
+  styleName:
+    description: Style Name
+    type: string
+  usageName:
+    description: Usage Name
+    type: string
+  top1000:
+    description: Top 1000
+    type: string
+    enum: [
+      "No",
+      "Yes"
+    ]
+  addressForArtwork:
+    description: Address For Artwork
+    type: string
+  artworkLanguage:
+    description: Artwork Language
+    type: string
+  callForTender:
+    description: Call For Tender
+    type: boolean
+  compatibleWith:
+    description: Compatible With Product
+    type: string
+  deadline:
+    description: Deadline for pictures
+    type: string
+  expectedMoq:
+    description: Expected Moq if Synchro (for purchase)
+    type: number
+  fifthAdvantageProduct:
+    description: Advantage fifth of the product
+    type: string
+  fourthAdvantageProduct:
+    description: Advantage fourth of the product
+    type: string
+  function1:
+    description: Function 1 of product
+    type: string
+  function2:
+    description: Function 2 of product
+    type: string
+  function3:
+    description: Function 3 of product
+    type: string
+  function4:
+    description: Function 4 of product
+    type: string
+  goldenSamplesComments:
+    description: Golden samples Comments
+    type: string
+  goldenSamplesValidation:
+    description: Golden samples Validation
+    type: string
+  hookablePack:
+    description: Hookable packaging
+    type: string
+    enum: [
+      "No",
+      "Yes"
+    ]
+  idealUseOfProduct:
+    description: Use ideal of the product
+    type: string
+  innerPackType:
+    description: Inner packaging type
+    type: string
+    enum: [
+      Cardboard box,                         
+      Display,                         
+      Plastic bag,                         
+      Shrink film,                         
+      Plastic link,                         
+      Paper bag,                         
+      Paper link,                         
+      Other,                         
+      N/A         
+    ]
+  instructionManual:
+    description: Instruction Manual
+    type: boolean
+  instructionManualName:
+    description: Instruction manual name
+    type: string
+  intellectualProperty:
+    description: Intellectual property
+    type: boolean
+  legalWarrantyDuration:
+    description: Legal warranty duration (2 years)
+    type: boolean
+  madeInEn:
+    description: Made In (English)
+    type: string
+  mainAdvantageOfProduct:
+    description: Advantage main of the product
+    type: string
+  masterDecli:
+    description: Master or Decli Pack
+    type: string
+    enum: [
+      Master,
+      Decli
+    ]
+  masterPackType:
+    description: Master packaging type
+    type: string
+    enum: [
+      Cardboard box,                         
+      Display,                         
+      Plastic bag,                         
+      Shrink film,                         
+      Paper bag,                         
+      Other,                         
+      N/A 
+    ]
+  mdhWarrantyDuration:
+    description: MDH warranty duration (commercial) (in years)
+    type: number
+  mop:
+    description: MOP expected (for purchase)
+    type: number
+  funcnameOfTheProductSerietion4:
+    description: Name of the product serie
+    type: string
+  nameOfVideos:
+    description: Name of videos
+    type: string
+  nbPrintedColors:
+    description: Number of printed colors
+    type: string
+  nbProductSoldUnitPack:
+    description: Nb of product by sale unit pack
+    type: number
+  newGtinReason:
+    description: GTIN New Reason
+    type: string
+  newGtinRequired:
+    description: GTIN New Required
+    type: string
+  noticeLanguage:
+    description: Instruction manual languages
+    type: string
+  numSampleRequestCommunication:
+    description: Samples requested Number for communication
+    type: string
+  numSampleRequestGoldenSample:
+    description: Golden Sample requested number
+    type: number
+  numSampleRequestSilverSample:
+    description: Silver Sample requested number
+    type: number
+  numSampleRequestWorkshop:
+    description: Samples requested Number for workshop
+    type: number
+  packProdType:
+    description: Packaging Production type
+    type: string
+    enum: [
+      Agency,
+      Supplier,
+      Internal creation,
+      "Agency: automatization",
+      "Supplier: automatization"
+    ]
+  packStatus:
+    description: Packaging Status
+    type: string
+    enum: [
+      Not received,
+      Waiting for validation,
+      Rejected,
+      Validated
+    ]
+  packWasteInfo:
+    description: Packaging waste sorting informations
+    type: string
+    enum: [
+      Nothing,
+      Green dot only,                         
+      Green dot + Triman,                         
+      "Case 1 : Cardboard only",                         
+      "Case 2A : Plastic Bag/Shrink component only",                         
+      "Case 2B : Plastic components",                         
+      "Case 3 : Cardboard + Plastic except PSE",                         
+      "Case 4 : Cardboard + Plastic + PSE"         
+    ]
+  palettePcbExpected:
+    description: Pallet PCB expected (for purchase)
+    type: number
+  paletteType:
+    description: Pallet type
+    type: string
+    enum: [
+      Wood pallet,                         
+      Cardboard pallet,                         
+      Steel pallet,                         
+      Backrest pallet,                         
+      Box pallet,                         
+      Other,                         
+      N/A         
+    ]
+  parcelWeight:
+    description: Parcel weight ( product + packing) (in kg)
+    type: number
+  photoVideoSample:
+    description: Samples for Photo and Video
+    type: string
+  picIlluseForPack1:
+    description: Picture/illustration for packaging
+    type: string
+  picIlluseForPack2:
+    description: Picture/illustration for packaging 2
+    type: string
+  printingProcess:
+    description: Printing Process (if unusual)
+    type: string
+  printPackComponent:
+    description: Printed packaging components (for Artworks)
+    type: string
+  longDesignationOnPack:
+    description: Product Designation on the Packaging
+    type: string
+  productCreationModification:
+    description: Product Creation Modification
+    type: string
+  productModificationDesc:
+    description: Product Modification Description
+    type: string
+  promotion:
+    description: Promotion
+    type: string
+  purchaseInnerExpected:
+    description: Inner expected (for purchase)
+    type: string
+  purchaseMasterExpected:
+    description: Master expected (for purchase)
+    type: string
+  purchaseMerchandisingExpected:
+    description: Merchandising expected (for Purchase)
+    type: string
+  qtityPicturePlanned:
+    description: Quantity of picture planned (per product)
+    type: integer
+  qtityVideoPlanned:
+    description: Quantity of videos planned (per product)
+    type: integer
+  salesUnitPackType:
+    description: Sales unit packaging type
+    type: string
+    enum: [
+      Cardboard box,                         
+      Cardboard card,                         
+      Paper sleeve,                         
+      Paper bag,                         
+      Hangtag,                         
+      Sticker,                         
+      Plastic box,                         
+      Blister,                         
+      Plastic bag,                         
+      Stand-up pouch,                         
+      Shrink film,                         
+      Plastic hanger,                         
+      Fabric bag,                         
+      BMC,                         
+      Aerosol,                         
+      Can,                         
+      Bottle,                         
+      Cartridge,                         
+      Plastic bucket,                         
+      Serynge,                         
+      Tube,                         
+      Spray,                         
+      Jerrycan,                         
+      Other         
+    ]
+  secondaryAdvantageProduct:
+    description: Advantage secondary of the product
+    type: string
+  segmentation:
+    description: Segmentation
+    type: string
+  silverSampleValidation:
+    description: Silver samples Validation
+    type: string
+  silverSampleValidationComments:
+    description: Silver samples Validation Comments
+    type: string
+  sparePartsRequired:
+    description: Spare Parts Required
+    type: string
+  technicalCode:
+    description: Technical Code
+    type: string
+  technology:
+    description: Technology industrial
+    type: string
+  thirdAdvantageProduct:
+    description: Advantage third of the product
+    type: string
+  

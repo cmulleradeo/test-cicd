@@ -1,0 +1,10 @@
+type: object
+properties:
+  count:
+    type: integer
+  offset:
+    type: integer
+  limit:
+    type: integer
+  total:
+    type: integer

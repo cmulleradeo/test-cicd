@@ -1,0 +1,68 @@
+name: Continuous integration
+
+on:
+  pull_request:
+    branches:
+      - develop
+    types:
+      - opened
+      - edited
+      - reopened
+      - synchronize
+      - ready_for_review
+
+env:
+  VAULT_ADDR: "https://vault.factory.adeo.cloud"
+  VAULT_NAMESPACE: /adeo/metric
+  NODE_VERSION: 14
+  SONAR_HOST_URL: "https://sonarqube.adeo.cloud/"
+
+jobs:
+  quality:
+    name: Check the quality of the code
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Import secrets from Vault Openshift
+        uses: hashicorp/vault-action@v2.3.1
+        with:
+          url: ${{ env.VAULT_ADDR }}
+          namespace: ${{ env.VAULT_NAMESPACE }}
+          method: approle
+          roleId: ${{ secrets.VAULT_ROLE_ID }}
+          secretId: ${{ secrets.VAULT_SECRET_ID }}
+          secrets: |
+            secret/data/acl/continuous_integration NPM_AUTH;
+            secret/data/acl/continuous_integration NPM_REGISTRY;
+            secret/data/acl/continuous_integration SONAR_TOKEN ;
+
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Generating .npmrc
+        run: |
+          npm config set @metric:registry=https:${{ env.NPM_REGISTRY }}
+          npm config set ${{ env.NPM_REGISTRY }}:_authToken=${{ env.NPM_AUTH }}
+
+      - name: Install dependencies
+        run: |
+          npm ci
+          npx lerna bootstrap
+
+      - name: EsLint
+        run: |
+          npm run lint
+          npm run ci:eslint-report
+
+      - name: Unit tests
+        continue-on-error: true
+        run: npx jest . --config=jest-ci.config.js --ci
+
+      - name: SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@v1.0.0
+
+      - name: Build the instance
+        run: npm run build

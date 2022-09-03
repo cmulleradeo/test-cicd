@@ -1,0 +1,5 @@
+in: header
+name: x-bu-code
+schema:
+  type: string
+required: false

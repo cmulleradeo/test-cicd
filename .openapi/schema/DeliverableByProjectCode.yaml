@@ -1,0 +1,58 @@
+type: object
+description: The COPIL Process Produit deliver Milestones with associated accountable roles, validated by the COPASQ for each kind of project. From the moment the BUs are involved, the milestones reflects at least the 3 moments of truths (participation, needs and forecast performance, official commitments). Note "Product Availability for the customers", even if it is a key moment of a project, is not a milestone.
+properties:
+  userName:
+    description: Deliverable Accountable User
+    type: string
+    example: Arnaud Guilloux
+    pattern: ^[0-9]{4}[0-9]{2}(P|S)[0-9]{2}$
+  roleName:
+    description: Deliverable Accountable Role
+    type: string
+    example: Manager
+    pattern: ^[0-9]{4}[0-9]{2}(P|S)[0-9]{2}$
+  name:
+    description: Deliverable Name
+    type: string
+  details:
+    description: Deliverable Details
+    type: string
+  initialDate:
+    description: Deliverable Initial Date
+    type: string
+    format: date-time
+  revisedDate:
+    description: Deliverable Revised Date
+    type: string
+    format: date-time
+  executionDate:
+    description: Deliverable Execution Date
+    type: string
+    format: date-time
+  status:
+    description: Deliverable Status
+    $ref: "./enum/StepStatus.yaml"
+  reference:
+    description: Deliverable Reference
+    $ref: "./enum/ReferenceMilestone.yaml"
+  stepType:
+    description: Step Type
+    type: string
+    enum: [
+      Milestone,
+      Deliverable
+    ]
+  essentialDeliverable:
+    description: Essential Deliverable
+    type: string
+    enum: [
+      Essential,
+      Optionnal
+    ]
+  deliverableType:
+    description: Deliverable Type
+    $ref: "./enum/DeliverableType.yaml"
+  deliverableStatus:
+    description: Deliverable Status
+    type: string
+    
