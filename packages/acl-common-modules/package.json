@@ -1,6 +1,6 @@
 {
   "name": "@metric/acl-common-modules",
-  "version": "2.3.4",
+  "version": "2.3.5",
   "description": "",
   "main": "lib/index.js",
   "files": [
