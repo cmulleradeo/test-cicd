@@ -10,7 +10,7 @@
     "packages/business-event/*",
     "packages/product-dev-event/*"
   ],
-  "version": "2.3.3",
+  "version": "2.3.4",
   "conventionalCommits": true,
   "changelogPreset": {
     "name": "conventionalcommits",
